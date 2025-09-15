@@ -1,4 +1,4 @@
-# Install script for directory: /home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/manipulator_description
+# Install script for directory: /home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/src/manipulator_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -98,7 +98,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/manipulator_description" TYPE FILE FILES "/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/manipulator_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/manipulator_description" TYPE FILE FILES "/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/src/manipulator_description/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

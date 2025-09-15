@@ -60,7 +60,7 @@
 	"paths" : 
 	{
 		"build" : "/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/build/manipulator_description",
-		"source" : "/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/manipulator_description"
+		"source" : "/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/src/manipulator_description"
 	},
 	"version" : 
 	{
