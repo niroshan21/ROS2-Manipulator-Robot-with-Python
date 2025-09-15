@@ -326,7 +326,7 @@ manipulator_description_BINARY_DIR:STATIC=/home/rajitha-niroshan/FYP/Repos/ROS2-
 manipulator_description_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-manipulator_description_SOURCE_DIR:STATIC=/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/manipulator_description
+manipulator_description_SOURCE_DIR:STATIC=/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/src/manipulator_description
 
 //Path to a program.
 xmllint_BIN:FILEPATH=/usr/bin/xmllint
@@ -416,7 +416,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/manipulator_description
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/src/manipulator_description
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
