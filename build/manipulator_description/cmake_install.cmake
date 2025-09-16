@@ -43,6 +43,15 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/manipulator_description" TYPE DIRECTORY FILES
+    "/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/src/manipulator_description/urdf"
+    "/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/src/manipulator_description/meshes"
+    "/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/src/manipulator_description/launch"
+    "/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/src/manipulator_description/rviz"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/build/manipulator_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/manipulator_description")
 endif()
 
