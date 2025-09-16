@@ -1,3 +1,17 @@
+/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/install/manipulator_description/share/manipulator_description/urdf/manipulator.urdf.xacro
+/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/install/manipulator_description/share/manipulator_description/meshes/left_finger.STL
+/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/install/manipulator_description/share/manipulator_description/meshes/vertical_drive_arm.STL
+/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/install/manipulator_description/share/manipulator_description/meshes/base_plate.STL
+/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/install/manipulator_description/share/manipulator_description/meshes/servo_plate.STL
+/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/install/manipulator_description/share/manipulator_description/meshes/claw_support.STL
+/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/install/manipulator_description/share/manipulator_description/meshes/link.STL
+/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/install/manipulator_description/share/manipulator_description/meshes/horizontal_arm.STL
+/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/install/manipulator_description/share/manipulator_description/meshes/triangular_link.STL
+/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/install/manipulator_description/share/manipulator_description/meshes/basement.STL
+/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/install/manipulator_description/share/manipulator_description/meshes/forward_drive_arm.STL
+/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/install/manipulator_description/share/manipulator_description/meshes/plate.STL
+/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/install/manipulator_description/share/manipulator_description/meshes/round_plate.STL
+/home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/install/manipulator_description/share/manipulator_description/meshes/right_finger.STL
 /home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/install/manipulator_description/share/ament_index/resource_index/package_run_dependencies/manipulator_description
 /home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/install/manipulator_description/share/ament_index/resource_index/parent_prefix_path/manipulator_description
 /home/rajitha-niroshan/FYP/Repos/ROS2-Manipulator-Robot-with-Python/install/manipulator_description/share/manipulator_description/environment/ament_prefix_path.sh
