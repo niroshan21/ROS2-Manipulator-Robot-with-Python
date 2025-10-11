@@ -1,5 +1,14 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="arduinobot">
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="manipulator">
+
+    <xacro:arg name="is_ignition" default="true"/>   <!-- Ignition simulation flag is used to enable/disable ignition features -->
+    <!-- Often you need to include different plugin tags, different frames, or different element names depending on whether you run 
+     the model in Ignition (which changed some plugin names & SDF behavior) or in classic Gazebo. The is_ignition arg lets you 
+     switch between those variants without maintaining two separate files.-->
+
+
+    <xacro:include filename="$(find manipulator_description)/urdf/manipulator_gazebo.xacro"/>
+    <xacro:include filename="$(find manipulator_description)/urdf/manipulator_ros2_control.xacro"/>
     
     <!-- Useful XACRO Variables (Properties) -->
     <xacro:property name="PI" value="3.14159265359" />
@@ -17,6 +26,29 @@
         </inertial>
     </xacro:macro>
 
+    <!-- Shared materials (RGBA, values 0..1) -->
+    <material name="mat_base">
+        <color rgba="0.0 0.2 0.8 1.0"/>   <!-- blue -->
+    </material>
+    <material name="mat_plate">
+        <color rgba="0.8 0.1 0.1 1.0"/>   <!-- red -->
+    </material>
+    <material name="mat_arm1">
+        <color rgba="0.1 0.8 0.2 1.0"/>   <!-- green -->
+    </material>
+    <material name="mat_arm2">
+        <color rgba="0.95 0.6 0.15 1.0"/> <!-- orange -->
+    </material>
+    <material name="mat_claw">
+        <color rgba="0.6 0.2 0.8 1.0"/>   <!-- purple -->
+    </material>
+    <material name="mat_gripper">
+        <color rgba="0.95 0.92 0.15 1.0"/><!-- yellow -->
+    </material>
+    <material name="mat_mesh_grey">
+        <color rgba="0.5 0.5 0.5 1.0"/>   <!-- fallback grey -->
+    </material>
+
     <!-- Links -->
     <link name="world"/>
 
@@ -27,6 +59,7 @@
             <geometry>
                 <mesh filename="package://manipulator_description/meshes/basement.STL" scale="0.01 0.01 0.01"/>
             </geometry>
+            <material name="mat_base"/>
         </visual>
         <collision>
             <origin rpy="0 0 0" xyz="-0.5 -0.5 0"/>
@@ -49,6 +82,7 @@
             <geometry>
                 <mesh filename="package://manipulator_description/meshes/base_plate.STL" scale="0.01 0.01 0.01"/>
             </geometry>
+            <material name="mat_plate"/>
         </visual>
         <collision>
             <origin rpy="0 0 0" xyz="-0.39 -0.39 -0.56"/>   <!-- pose of the child link frame relative to the parent link frame. -->
@@ -74,6 +108,7 @@
             <geometry>
                 <mesh filename="package://manipulator_description/meshes/forward_drive_arm.STL" scale="0.01 0.01 0.01"/>
             </geometry>
+            <material name="mat_arm1"/>
         </visual>
         <collision>
             <origin rpy=" 0 -${PI / 2} ${PI / 2}" xyz="0.19 0.06 -0.08"/>
@@ -99,6 +134,7 @@
             <geometry>
                 <mesh filename="package://manipulator_description/meshes/horizontal_arm.STL" scale="0.01 0.01 0.01"/>
             </geometry>
+            <material name="mat_arm2"/>
         </visual>
         <collision>
             <origin rpy="${PI / 2} 0 ${PI / 2}" xyz="-0.03 -0.4 -0.06"/>
@@ -124,6 +160,7 @@
             <geometry>
                 <mesh filename="package://manipulator_description/meshes/claw_support.STL" scale="0.01 0.01 0.01"/>
             </geometry>
+            <material name="mat_claw"/>
         </visual>
         <collision>
             <origin rpy="0 0 ${PI / 2}" xyz="0 -0.05 -0.15"/>
@@ -146,6 +183,7 @@
             <geometry>
                 <mesh filename="package://manipulator_description/meshes/right_finger.STL" scale="0.01 0.01 0.01"/>
             </geometry>
+            <material name="mat_gripper"/>
         </visual>
         <collision>
             <origin rpy="0 0 -${PI / 2}" xyz="-0.1 0.50 -0.1"/>
@@ -162,6 +200,7 @@
         <axis xyz="0 0 1"/>
         <limit lower="-${PI / 2}" upper="0.0" 
                effort="${effort}" velocity="${velocity}"/>
+        <dynamics damping="0.001" friction="0.001"/>
     </joint>
 
     <link name="gripper_left">
@@ -171,6 +210,7 @@
             <geometry>
                 <mesh filename="package://manipulator_description/meshes/left_finger.STL" scale="0.01 0.01 0.01"/>
             </geometry>
+            <material name="mat_gripper"/>
         </visual>
         <collision>
             <origin rpy="0 0 -${PI / 2}" xyz="-0.04 0.50 -0.1"/>
@@ -187,7 +227,9 @@
         <axis xyz="0 0 1"/>
         <limit lower="0.0" upper="${PI / 2}" 
                effort="${effort}" velocity="${velocity}"/>
+        <dynamics damping="0.001" friction="0.001"/>
         <mimic joint="joint_4" multiplier="-1"/>   <!-- This joint mimics joint_4 means it will move in the opposite direction to joint_4 -->
     </joint>
+
     
 </robot>

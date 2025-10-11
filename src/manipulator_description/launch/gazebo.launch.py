@@ -12,15 +12,15 @@ from launch_ros.parameter_descriptions import ParameterValue
 
 
 def generate_launch_description():
-    # Get the shared directory of the bumperbot_description package.
+    # Get the shared directory of the manipulator_description package.
     # This is where URDF, meshes, and other robot description files are stored.
-    bumperbot_description_dir = get_package_share_directory("bumperbot_description")
+    manipulator_description_dir = get_package_share_directory("manipulator_description")
 
     # Build the absolute path to the robot description file (xacro format).
-    urdf_file_dir = os.path.join(bumperbot_description_dir, "urdf", "bumperbot.urdf.xacro")
+    urdf_file_dir = os.path.join(manipulator_description_dir, "urdf", "manipulator.urdf.xacro")
 
     # Declare a launch argument called "model".
-    # Default = the path to bumperbot.urdf.xacro, but the user can override it at runtime. It means that if the user does not provide a different value for the "model" argument when launching, the default value will be used.
+    # Default = the path to manipulator.urdf.xacro, but the user can override it at runtime. It means that if the user does not provide a different value for the "model" argument when launching, the default value will be used.
     model_arg = DeclareLaunchArgument(
         name='model',
         default_value=urdf_file_dir,
@@ -28,16 +28,25 @@ def generate_launch_description():
     )
 
     # Set the GZ_SIM_RESOURCE_PATH environment variable so Gazebo can locate meshes and other resources.
-    # Here we add the parent folder of bumperbot_description to the search path.
+    # Here we add the parent folder of manipulator_description to the search path.
     gazebo_resource_path = SetEnvironmentVariable(
         name='GZ_SIM_RESOURCE_PATH',
-        value=[str(Path(bumperbot_description_dir).parent.resolve())]
+        value=[str(Path(manipulator_description_dir).parent.resolve())]  # Path: convert to python path object and get absolute path
     )
+
+    ros_distro = os.environ["ROS_DISTRO"]
+    is_ignition = "True" if ros_distro == "humble" else "False"
+    physics_engine = "" if ros_distro == "humble" else "--physics-engine gz-physics-bullet-featherstone-plugin"
 
     # Convert the .xacro file into a URDF XML string at launch time.
     # The "robot_description" parameter is used by robot_state_publisher and other nodes.
     robot_description = ParameterValue(
-        Command(['xacro ', LaunchConfiguration('model')]),
+        Command([
+            "xacro ", 
+            LaunchConfiguration('model'), 
+            " is_ignition:=",
+            is_ignition
+            ]),
         value_type=str
     )
 
@@ -46,7 +55,8 @@ def generate_launch_description():
     robot_state_publisher_node = Node(
         package="robot_state_publisher",
         executable="robot_state_publisher",
-        parameters=[{"robot_description": robot_description}],
+        parameters=[{"robot_description": robot_description,
+                     "use_sim_time": True}],     # Use simulation time used to sync with Gazebo
     )
 
     # Launch Gazebo (Ignition/GZ Sim) by including its default launch file from ros_gz_sim.
@@ -56,19 +66,19 @@ def generate_launch_description():
         PythonLaunchDescriptionSource([
             os.path.join(get_package_share_directory('ros_gz_sim'), 'launch', 'gz_sim.launch.py')
         ]),
-        launch_arguments=[("gz_args", [" -v 4", " -r", " empty.sdf"])]
+        launch_arguments=[("gz_args", [" -v 4 -r empty.sdf ", physics_engine])],  # physics_engine is empty for Humble
     )
 
     # Spawn the robot entity into Gazebo. Spawn means to insert the robot model into the simulation.
     # Here we use the "create" executable from ros_gz_sim to spawn the robot
     # The "create" executable reads the robot description from the /robot_description topic
-    # and inserts it into the simulation with the name "bumperbot".
+    # and inserts it into the simulation with the name "manipulator".
     gz_spawn_entity = Node(
         package='ros_gz_sim',
         executable='create',
         output='screen',
         arguments=['-topic', 'robot_description',
-                   '-name', 'bumperbot'],
+                   '-name', 'manipulator',],
     )
 
     # Bridge topics between ROS 2 and Gazebo.

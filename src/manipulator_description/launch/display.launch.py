@@ -52,11 +52,11 @@ def generate_launch_description():
     #It defines the nodes, parameters, and other configurations needed to run the simulation.
     #The function is called when the launch file is executed.
 
-    bumperbot_description_dir = get_package_share_directory("bumperbot_description")
-    #Get the absolute path to the share directory of the bumperbot_description package.
+    manipulator_description_dir = get_package_share_directory("manipulator_description")
+    #Get the absolute path to the share directory of the manipulator_description package.
     #This path is used to locate the URDF file and other resources needed for the simulation.
 
-    urdf_file_dir = os.path.join(bumperbot_description_dir, "urdf", "bumperbot.urdf.xacro")
+    urdf_file_dir = os.path.join(manipulator_description_dir, "urdf", "manipulator.urdf.xacro")
     #Join the package directory with the relative path to the URDF file.
 
     model_arg = DeclareLaunchArgument(
@@ -70,6 +70,7 @@ def generate_launch_description():
         Command(['xacro ', LaunchConfiguration('model')]),
         value_type=str
     ) 
+    # Convert the .xacro file into a URDF XML string at launch time.
     #Uses the xacro command to process the URDF/XACRO file.
     #Gets the file path from the "model" launch configuration, Specifies the value type as string.
 
@@ -91,7 +92,7 @@ def generate_launch_description():
         executable="rviz2",
         name="rviz2",
         output="screen",
-        arguments=["-d", os.path.join(bumperbot_description_dir, "rviz", "display.rviz")],
+        arguments=["-d", os.path.join(manipulator_description_dir, "rviz", "display.rviz")],
     )
     #Launches RViz2 (ROS visualization tool), Loads a predefined configuration from "display.rviz"
     #Shows output on screen (not just logging)
