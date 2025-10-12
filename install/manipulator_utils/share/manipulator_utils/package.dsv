@@ -1,0 +1,11 @@
+source;share/manipulator_utils/hook/cmake_prefix_path.ps1
+source;share/manipulator_utils/hook/cmake_prefix_path.dsv
+source;share/manipulator_utils/hook/cmake_prefix_path.sh
+source;share/manipulator_utils/hook/pythonpath.ps1
+source;share/manipulator_utils/hook/pythonpath.dsv
+source;share/manipulator_utils/hook/pythonpath.sh
+source;share/manipulator_utils/local_setup.bash
+source;share/manipulator_utils/local_setup.dsv
+source;share/manipulator_utils/local_setup.ps1
+source;share/manipulator_utils/local_setup.sh
+source;share/manipulator_utils/local_setup.zsh

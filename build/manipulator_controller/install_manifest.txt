@@ -1,0 +1,17 @@
+/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_controller/share/manipulator_controller/config/manipulator_controllers.yaml
+/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_controller/share/manipulator_controller/launch/controller.launch.py
+/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_controller/share/ament_index/resource_index/package_run_dependencies/manipulator_controller
+/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_controller/share/ament_index/resource_index/parent_prefix_path/manipulator_controller
+/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_controller/share/manipulator_controller/environment/ament_prefix_path.sh
+/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_controller/share/manipulator_controller/environment/ament_prefix_path.dsv
+/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_controller/share/manipulator_controller/environment/path.sh
+/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_controller/share/manipulator_controller/environment/path.dsv
+/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_controller/share/manipulator_controller/local_setup.bash
+/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_controller/share/manipulator_controller/local_setup.sh
+/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_controller/share/manipulator_controller/local_setup.zsh
+/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_controller/share/manipulator_controller/local_setup.dsv
+/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_controller/share/manipulator_controller/package.dsv
+/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_controller/share/ament_index/resource_index/packages/manipulator_controller
+/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_controller/share/manipulator_controller/cmake/manipulator_controllerConfig.cmake
+/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_controller/share/manipulator_controller/cmake/manipulator_controllerConfig-version.cmake
+/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_controller/share/manipulator_controller/package.xml
