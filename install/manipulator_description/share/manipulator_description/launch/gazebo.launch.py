@@ -35,7 +35,8 @@ def generate_launch_description():
     )
 
     ros_distro = os.environ["ROS_DISTRO"]
-    is_ignition = "True" if ros_distro == "humble" else "False"
+    # xacro expects lowercase boolean strings (e.g. 'true'/'false') when passing args
+    is_ignition = 'true' if ros_distro == 'humble' else 'false'
     physics_engine = "" if ros_distro == "humble" else "--physics-engine gz-physics-bullet-featherstone-plugin"
 
     # Convert the .xacro file into a URDF XML string at launch time.

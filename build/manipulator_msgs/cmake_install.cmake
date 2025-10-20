@@ -59,6 +59,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/manipulator_msgs/action" TYPE FILE FILES "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_generator_type_description/manipulator_msgs/action/Fibonacci.json")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/manipulator_msgs/manipulator_msgs" TYPE DIRECTORY FILES "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_generator_c/manipulator_msgs/" REGEX "/[^/]*\\.h$")
 endif()
 
@@ -383,6 +387,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/manipulator_msgs/action" TYPE FILE FILES "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_adapter/manipulator_msgs/action/Fibonacci.idl")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/manipulator_msgs/srv" TYPE FILE FILES "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_msgs/srv/AddTwoInts.srv")
 endif()
 
@@ -392,6 +400,10 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/manipulator_msgs/srv" TYPE FILE FILES "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_msgs/srv/EulerToQuaternion.srv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/manipulator_msgs/action" TYPE FILE FILES "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_msgs/action/Fibonacci.action")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

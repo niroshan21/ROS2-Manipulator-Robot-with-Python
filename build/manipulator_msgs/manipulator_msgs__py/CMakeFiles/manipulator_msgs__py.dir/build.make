@@ -72,10 +72,13 @@ include /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Pyth
 /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/manipulator_msgs__py/CMakeFiles/manipulator_msgs__py: rosidl_generator_py/manipulator_msgs/srv/_add_two_ints.py
 /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/manipulator_msgs__py/CMakeFiles/manipulator_msgs__py: rosidl_generator_py/manipulator_msgs/srv/_quaternion_to_euler.py
 /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/manipulator_msgs__py/CMakeFiles/manipulator_msgs__py: rosidl_generator_py/manipulator_msgs/srv/_euler_to_quaternion.py
+/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/manipulator_msgs__py/CMakeFiles/manipulator_msgs__py: rosidl_generator_py/manipulator_msgs/action/_fibonacci.py
 /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/manipulator_msgs__py/CMakeFiles/manipulator_msgs__py: rosidl_generator_py/manipulator_msgs/srv/__init__.py
+/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/manipulator_msgs__py/CMakeFiles/manipulator_msgs__py: rosidl_generator_py/manipulator_msgs/action/__init__.py
 /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/manipulator_msgs__py/CMakeFiles/manipulator_msgs__py: rosidl_generator_py/manipulator_msgs/srv/_add_two_ints_s.c
 /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/manipulator_msgs__py/CMakeFiles/manipulator_msgs__py: rosidl_generator_py/manipulator_msgs/srv/_quaternion_to_euler_s.c
 /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/manipulator_msgs__py/CMakeFiles/manipulator_msgs__py: rosidl_generator_py/manipulator_msgs/srv/_euler_to_quaternion_s.c
+/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/manipulator_msgs__py/CMakeFiles/manipulator_msgs__py: rosidl_generator_py/manipulator_msgs/action/_fibonacci_s.c
 
 rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_py/__init__.py
@@ -93,9 +96,15 @@ rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_f
 rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/manipulator_msgs/srv/AddTwoInts.idl
 rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/manipulator_msgs/srv/QuaternionToEuler.idl
 rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/manipulator_msgs/srv/EulerToQuaternion.idl
+rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/manipulator_msgs/action/Fibonacci.idl
 rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
+rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/action_msgs/msg/GoalInfo.idl
+rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/action_msgs/msg/GoalStatus.idl
+rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/action_msgs/msg/GoalStatusArray.idl
+rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/action_msgs/srv/CancelGoal.idl
+rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/unique_identifier_msgs/msg/UUID.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
 	cd /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/manipulator_msgs__py && /usr/bin/python3 /opt/ros/jazzy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
@@ -114,8 +123,14 @@ rosidl_generator_py/manipulator_msgs/srv/_quaternion_to_euler.py: rosidl_generat
 rosidl_generator_py/manipulator_msgs/srv/_euler_to_quaternion.py: rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/manipulator_msgs/srv/_euler_to_quaternion.py
 
+rosidl_generator_py/manipulator_msgs/action/_fibonacci.py: rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/manipulator_msgs/action/_fibonacci.py
+
 rosidl_generator_py/manipulator_msgs/srv/__init__.py: rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/manipulator_msgs/srv/__init__.py
+
+rosidl_generator_py/manipulator_msgs/action/__init__.py: rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/manipulator_msgs/action/__init__.py
 
 rosidl_generator_py/manipulator_msgs/srv/_add_two_ints_s.c: rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/manipulator_msgs/srv/_add_two_ints_s.c
@@ -126,10 +141,16 @@ rosidl_generator_py/manipulator_msgs/srv/_quaternion_to_euler_s.c: rosidl_genera
 rosidl_generator_py/manipulator_msgs/srv/_euler_to_quaternion_s.c: rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/manipulator_msgs/srv/_euler_to_quaternion_s.c
 
+rosidl_generator_py/manipulator_msgs/action/_fibonacci_s.c: rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/manipulator_msgs/action/_fibonacci_s.c
+
 manipulator_msgs__py: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/manipulator_msgs__py/CMakeFiles/manipulator_msgs__py
 manipulator_msgs__py: rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_c.c
 manipulator_msgs__py: rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 manipulator_msgs__py: rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_introspection_c.c
+manipulator_msgs__py: rosidl_generator_py/manipulator_msgs/action/__init__.py
+manipulator_msgs__py: rosidl_generator_py/manipulator_msgs/action/_fibonacci.py
+manipulator_msgs__py: rosidl_generator_py/manipulator_msgs/action/_fibonacci_s.c
 manipulator_msgs__py: rosidl_generator_py/manipulator_msgs/srv/__init__.py
 manipulator_msgs__py: rosidl_generator_py/manipulator_msgs/srv/_add_two_ints.py
 manipulator_msgs__py: rosidl_generator_py/manipulator_msgs/srv/_add_two_ints_s.c

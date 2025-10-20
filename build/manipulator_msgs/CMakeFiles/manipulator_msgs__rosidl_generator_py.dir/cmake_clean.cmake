@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/manipulator_msgs__rosidl_generator_py.dir/rosidl_generator_py/manipulator_msgs/action/_fibonacci_s.c.o"
+  "CMakeFiles/manipulator_msgs__rosidl_generator_py.dir/rosidl_generator_py/manipulator_msgs/action/_fibonacci_s.c.o.d"
   "CMakeFiles/manipulator_msgs__rosidl_generator_py.dir/rosidl_generator_py/manipulator_msgs/srv/_add_two_ints_s.c.o"
   "CMakeFiles/manipulator_msgs__rosidl_generator_py.dir/rosidl_generator_py/manipulator_msgs/srv/_add_two_ints_s.c.o.d"
   "CMakeFiles/manipulator_msgs__rosidl_generator_py.dir/rosidl_generator_py/manipulator_msgs/srv/_euler_to_quaternion_s.c.o"

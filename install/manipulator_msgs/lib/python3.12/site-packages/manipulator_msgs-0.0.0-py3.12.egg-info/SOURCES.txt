@@ -4,3 +4,9 @@ manipulator_msgs.egg-info/PKG-INFO
 manipulator_msgs.egg-info/SOURCES.txt
 manipulator_msgs.egg-info/dependency_links.txt
 manipulator_msgs.egg-info/top_level.txt
+manipulator_msgs/action/__init__.py
+manipulator_msgs/action/_fibonacci.py
+manipulator_msgs/srv/__init__.py
+manipulator_msgs/srv/_add_two_ints.py
+manipulator_msgs/srv/_euler_to_quaternion.py
+manipulator_msgs/srv/_quaternion_to_euler.py

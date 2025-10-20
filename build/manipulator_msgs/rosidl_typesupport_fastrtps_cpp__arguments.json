@@ -5,12 +5,18 @@
   "idl_tuples": [
     "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_adapter/manipulator_msgs:srv/AddTwoInts.idl",
     "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_adapter/manipulator_msgs:srv/QuaternionToEuler.idl",
-    "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_adapter/manipulator_msgs:srv/EulerToQuaternion.idl"
+    "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_adapter/manipulator_msgs:srv/EulerToQuaternion.idl",
+    "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_adapter/manipulator_msgs:action/Fibonacci.idl"
   ],
   "ros_interface_dependencies": [
     "service_msgs:/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
     "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
-    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl"
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl",
+    "action_msgs:/opt/ros/jazzy/share/action_msgs/msg/GoalInfo.idl",
+    "action_msgs:/opt/ros/jazzy/share/action_msgs/msg/GoalStatus.idl",
+    "action_msgs:/opt/ros/jazzy/share/action_msgs/msg/GoalStatusArray.idl",
+    "action_msgs:/opt/ros/jazzy/share/action_msgs/srv/CancelGoal.idl",
+    "unique_identifier_msgs:/opt/ros/jazzy/share/unique_identifier_msgs/msg/UUID.idl"
   ],
   "target_dependencies": [
     "/opt/ros/jazzy/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp",
@@ -24,8 +30,14 @@
     "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_adapter/manipulator_msgs/srv/AddTwoInts.idl",
     "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_adapter/manipulator_msgs/srv/QuaternionToEuler.idl",
     "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_adapter/manipulator_msgs/srv/EulerToQuaternion.idl",
+    "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_adapter/manipulator_msgs/action/Fibonacci.idl",
     "/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
     "/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
-    "/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl"
+    "/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl",
+    "/opt/ros/jazzy/share/action_msgs/msg/GoalInfo.idl",
+    "/opt/ros/jazzy/share/action_msgs/msg/GoalStatus.idl",
+    "/opt/ros/jazzy/share/action_msgs/msg/GoalStatusArray.idl",
+    "/opt/ros/jazzy/share/action_msgs/srv/CancelGoal.idl",
+    "/opt/ros/jazzy/share/unique_identifier_msgs/msg/UUID.idl"
   ]
 }

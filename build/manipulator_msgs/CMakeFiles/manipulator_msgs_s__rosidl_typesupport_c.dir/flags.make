@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DROS_PACKAGE_NAME=\"manipulator_msgs\" -Dmanipulator_msgs_s__rosidl_typesupport_c_EXPORTS
 
-C_INCLUDES = -I/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_generator_c -I/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_generator_py -I/opt/ros/jazzy/include/rmw -isystem /usr/include/python3.12 -isystem /opt/ros/jazzy/include/service_msgs -isystem /opt/ros/jazzy/include/builtin_interfaces -isystem /opt/ros/jazzy/include/rosidl_runtime_c -isystem /opt/ros/jazzy/include/rcutils -isystem /opt/ros/jazzy/include/rosidl_typesupport_interface -isystem /opt/ros/jazzy/include/rosidl_typesupport_c -isystem /opt/ros/jazzy/include/rosidl_dynamic_typesupport
+C_INCLUDES = -I/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_generator_c -I/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_generator_py -I/opt/ros/jazzy/include/rmw -isystem /usr/include/python3.12 -isystem /opt/ros/jazzy/include/service_msgs -isystem /opt/ros/jazzy/include/builtin_interfaces -isystem /opt/ros/jazzy/include/rosidl_runtime_c -isystem /opt/ros/jazzy/include/rcutils -isystem /opt/ros/jazzy/include/rosidl_typesupport_interface -isystem /opt/ros/jazzy/include/action_msgs -isystem /opt/ros/jazzy/include/unique_identifier_msgs -isystem /opt/ros/jazzy/include/rosidl_typesupport_c -isystem /opt/ros/jazzy/include/rosidl_dynamic_typesupport
 
 C_FLAGS = -fPIC -Wall -Wextra
 

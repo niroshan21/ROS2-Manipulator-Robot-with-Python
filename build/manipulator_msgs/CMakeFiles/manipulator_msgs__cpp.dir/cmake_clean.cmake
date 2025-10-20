@@ -1,5 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/manipulator_msgs__cpp"
+  "rosidl_generator_cpp/manipulator_msgs/action/detail/fibonacci__builder.hpp"
+  "rosidl_generator_cpp/manipulator_msgs/action/detail/fibonacci__struct.hpp"
+  "rosidl_generator_cpp/manipulator_msgs/action/detail/fibonacci__traits.hpp"
+  "rosidl_generator_cpp/manipulator_msgs/action/detail/fibonacci__type_support.hpp"
+  "rosidl_generator_cpp/manipulator_msgs/action/fibonacci.hpp"
   "rosidl_generator_cpp/manipulator_msgs/msg/rosidl_generator_cpp__visibility_control.hpp"
   "rosidl_generator_cpp/manipulator_msgs/srv/add_two_ints.hpp"
   "rosidl_generator_cpp/manipulator_msgs/srv/detail/add_two_ints__builder.hpp"

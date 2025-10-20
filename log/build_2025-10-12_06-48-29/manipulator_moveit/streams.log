@@ -1,0 +1,54 @@
+[0.014s] Invoking command in '/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_moveit -DCMAKE_INSTALL_PREFIX=/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit
+[0.069s] -- The C compiler identification is GNU 13.3.0
+[0.147s] -- The CXX compiler identification is GNU 13.3.0
+[0.172s] -- Detecting C compiler ABI info
+[0.292s] -- Detecting C compiler ABI info - done
+[0.318s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.319s] -- Detecting C compile features
+[0.319s] -- Detecting C compile features - done
+[0.334s] -- Detecting CXX compiler ABI info
+[0.454s] -- Detecting CXX compiler ABI info - done
+[0.472s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.473s] -- Detecting CXX compile features
+[0.474s] -- Detecting CXX compile features - done
+[0.480s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.670s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.806s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.935s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.936s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.936s] -- Added test 'lint_cmake' to check CMake code style
+[0.937s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.939s] -- Added test 'xmllint' to check XML markup files
+[0.941s] -- Configuring done (0.9s)
+[0.945s] -- Generating done (0.0s)
+[0.947s] -- Build files have been written to: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_moveit
+[0.953s] Invoked command in '/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_moveit -DCMAKE_INSTALL_PREFIX=/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit
+[0.954s] Invoking command in '/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_moveit -- -j8 -l8
+[1.003s] Invoked command in '/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_moveit -- -j8 -l8
+[1.013s] Invoking command in '/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_moveit
+[1.021s] -- Install configuration: ""
+[1.021s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit/share/manipulator_moveit/config
+[1.022s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit/share/manipulator_moveit/config/manipulator.srdf
+[1.022s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit/share/manipulator_moveit/config/moveit_controllers.yaml
+[1.022s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit/share/manipulator_moveit/config/joint_limits.yaml
+[1.022s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit/share/manipulator_moveit/config/kinematics.yaml
+[1.022s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit/share/manipulator_moveit/config/initial_positions.yaml
+[1.022s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit/share/manipulator_moveit/config/pilz_cartesian_limits.yaml
+[1.022s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit/share/manipulator_moveit/launch
+[1.023s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit/share/manipulator_moveit/launch/moveit.launch.py
+[1.023s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit/share/ament_index/resource_index/package_run_dependencies/manipulator_moveit
+[1.023s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit/share/ament_index/resource_index/parent_prefix_path/manipulator_moveit
+[1.023s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit/share/manipulator_moveit/environment/ament_prefix_path.sh
+[1.023s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit/share/manipulator_moveit/environment/ament_prefix_path.dsv
+[1.023s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit/share/manipulator_moveit/environment/path.sh
+[1.024s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit/share/manipulator_moveit/environment/path.dsv
+[1.024s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit/share/manipulator_moveit/local_setup.bash
+[1.024s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit/share/manipulator_moveit/local_setup.sh
+[1.024s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit/share/manipulator_moveit/local_setup.zsh
+[1.024s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit/share/manipulator_moveit/local_setup.dsv
+[1.025s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit/share/manipulator_moveit/package.dsv
+[1.025s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit/share/ament_index/resource_index/packages/manipulator_moveit
+[1.025s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit/share/manipulator_moveit/cmake/manipulator_moveitConfig.cmake
+[1.025s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit/share/manipulator_moveit/cmake/manipulator_moveitConfig-version.cmake
+[1.025s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_moveit/share/manipulator_moveit/package.xml
+[1.027s] Invoked command in '/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_moveit

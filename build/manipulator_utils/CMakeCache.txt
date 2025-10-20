@@ -244,6 +244,9 @@ SITE:STRING=niroshanX
 //Path to a library.
 _lib:FILEPATH=/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_typesupport_fastrtps_cpp.so
 
+//The directory containing a CMake configuration file for action_msgs.
+action_msgs_DIR:PATH=/opt/ros/jazzy/share/action_msgs/cmake
+
 //The directory containing a CMake configuration file for ament_cmake.
 ament_cmake_DIR:PATH=/opt/ros/jazzy/share/ament_cmake/cmake
 
@@ -405,6 +408,9 @@ rosidl_typesupport_introspection_cpp_DIR:PATH=/opt/ros/jazzy/share/rosidl_typesu
 
 //The directory containing a CMake configuration file for service_msgs.
 service_msgs_DIR:PATH=/opt/ros/jazzy/share/service_msgs/cmake
+
+//The directory containing a CMake configuration file for unique_identifier_msgs.
+unique_identifier_msgs_DIR:PATH=/opt/ros/jazzy/share/unique_identifier_msgs/cmake
 
 //Path to a program.
 xmllint_BIN:FILEPATH=/usr/bin/xmllint

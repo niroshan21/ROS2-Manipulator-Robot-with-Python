@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/manipulator_msgs__rosidl_generator_type_description"
+  "rosidl_generator_type_description/manipulator_msgs/action/Fibonacci.json"
   "rosidl_generator_type_description/manipulator_msgs/srv/AddTwoInts.json"
   "rosidl_generator_type_description/manipulator_msgs/srv/EulerToQuaternion.json"
   "rosidl_generator_type_description/manipulator_msgs/srv/QuaternionToEuler.json"

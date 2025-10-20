@@ -26,6 +26,7 @@ setup(
         'console_scripts': [
             'simple_service_server = manipulator_py_examples.simple_service_server:main',
             'simple_service_client = manipulator_py_examples.simple_service_client:main',
+            'simple_action_server = manipulator_py_examples.simple_action_server:main',
         ],
     },
 )

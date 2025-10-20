@@ -43,6 +43,13 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/manipulator_moveit" TYPE DIRECTORY FILES
+    "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_moveit/config"
+    "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_moveit/launch"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_moveit/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/manipulator_moveit")
 endif()
 
