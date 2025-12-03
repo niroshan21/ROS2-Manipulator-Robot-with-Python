@@ -1,0 +1,465 @@
+[0.074s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.074s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7eeefc6b5010>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7eeefc62ecf0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7eeefc62ecf0>>, mixin_verb=('build',))
+[0.101s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.101s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.101s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.101s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.101s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.101s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.101s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.101s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.102s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_controller) by extension 'ignore'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_controller) by extension 'ignore_ament_install'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_controller) by extensions ['colcon_pkg']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_controller) by extension 'colcon_pkg'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_controller) by extensions ['colcon_meta']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_controller) by extension 'colcon_meta'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_controller) by extensions ['ros']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_controller) by extension 'ros'
+[0.123s] DEBUG:colcon.colcon_core.package_identification:Package 'src/manipulator_controller' with type 'ros.ament_cmake' and name 'manipulator_controller'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_description) by extensions ['ignore', 'ignore_ament_install']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_description) by extension 'ignore'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_description) by extension 'ignore_ament_install'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_description) by extensions ['colcon_pkg']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_description) by extension 'colcon_pkg'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_description) by extensions ['colcon_meta']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_description) by extension 'colcon_meta'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_description) by extensions ['ros']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_description) by extension 'ros'
+[0.126s] DEBUG:colcon.colcon_core.package_identification:Package 'src/manipulator_description' with type 'ros.ament_cmake' and name 'manipulator_description'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_moveit) by extensions ['ignore', 'ignore_ament_install']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_moveit) by extension 'ignore'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_moveit) by extension 'ignore_ament_install'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_moveit) by extensions ['colcon_pkg']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_moveit) by extension 'colcon_pkg'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_moveit) by extensions ['colcon_meta']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_moveit) by extension 'colcon_meta'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_moveit) by extensions ['ros']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_moveit) by extension 'ros'
+[0.126s] DEBUG:colcon.colcon_core.package_identification:Package 'src/manipulator_moveit' with type 'ros.ament_cmake' and name 'manipulator_moveit'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_msgs) by extension 'ignore'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_msgs) by extension 'ignore_ament_install'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_msgs) by extensions ['colcon_pkg']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_msgs) by extension 'colcon_pkg'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_msgs) by extensions ['colcon_meta']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_msgs) by extension 'colcon_meta'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_msgs) by extensions ['ros']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_msgs) by extension 'ros'
+[0.127s] DEBUG:colcon.colcon_core.package_identification:Package 'src/manipulator_msgs' with type 'ros.ament_cmake' and name 'manipulator_msgs'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_py_examples) by extensions ['ignore', 'ignore_ament_install']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_py_examples) by extension 'ignore'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_py_examples) by extension 'ignore_ament_install'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_py_examples) by extensions ['colcon_pkg']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_py_examples) by extension 'colcon_pkg'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_py_examples) by extensions ['colcon_meta']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_py_examples) by extension 'colcon_meta'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_py_examples) by extensions ['ros']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_py_examples) by extension 'ros'
+[0.128s] DEBUG:colcon.colcon_core.package_identification:Package 'src/manipulator_py_examples' with type 'ros.ament_python' and name 'manipulator_py_examples'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_utils) by extensions ['ignore', 'ignore_ament_install']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_utils) by extension 'ignore'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_utils) by extension 'ignore_ament_install'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_utils) by extensions ['colcon_pkg']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_utils) by extension 'colcon_pkg'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_utils) by extensions ['colcon_meta']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_utils) by extension 'colcon_meta'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_utils) by extensions ['ros']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_utils) by extension 'ros'
+[0.128s] DEBUG:colcon.colcon_core.package_identification:Package 'src/manipulator_utils' with type 'ros.ament_cmake' and name 'manipulator_utils'
+[0.128s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.128s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.128s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.128s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.128s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.142s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/rajitha-niroshan/Uni/Sem7/Autonomous/ros2_ws/install
+[0.144s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 433 installed packages in /opt/ros/jazzy
+[0.145s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'manipulator_description' build argument 'cmake_args' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'manipulator_description' build argument 'cmake_target' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'manipulator_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'manipulator_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'manipulator_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'manipulator_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'manipulator_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'manipulator_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.183s] Level 5:colcon.colcon_core.verb:set package 'manipulator_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.183s] DEBUG:colcon.colcon_core.verb:Building package 'manipulator_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description', 'merge_install': False, 'path': '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_description', 'symlink_install': False, 'test_result_base': None}
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_moveit' build argument 'cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_moveit' build argument 'cmake_target' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_moveit' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_moveit' build argument 'cmake_clean_cache' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_moveit' build argument 'cmake_clean_first' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_moveit' build argument 'cmake_force_configure' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_moveit' build argument 'ament_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_moveit' build argument 'catkin_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_moveit' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.184s] DEBUG:colcon.colcon_core.verb:Building package 'manipulator_moveit' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_moveit', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit', 'merge_install': False, 'path': '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_moveit', 'symlink_install': False, 'test_result_base': None}
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_msgs' build argument 'cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_msgs' build argument 'cmake_target' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.184s] DEBUG:colcon.colcon_core.verb:Building package 'manipulator_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs', 'merge_install': False, 'path': '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_controller' build argument 'cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_controller' build argument 'cmake_target' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.184s] DEBUG:colcon.colcon_core.verb:Building package 'manipulator_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller', 'merge_install': False, 'path': '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_controller', 'symlink_install': False, 'test_result_base': None}
+[0.184s] Level 5:colcon.colcon_core.verb:set package 'manipulator_py_examples' build argument 'cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'manipulator_py_examples' build argument 'cmake_target' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'manipulator_py_examples' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'manipulator_py_examples' build argument 'cmake_clean_cache' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'manipulator_py_examples' build argument 'cmake_clean_first' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'manipulator_py_examples' build argument 'cmake_force_configure' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'manipulator_py_examples' build argument 'ament_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'manipulator_py_examples' build argument 'catkin_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'manipulator_py_examples' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.185s] DEBUG:colcon.colcon_core.verb:Building package 'manipulator_py_examples' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_py_examples', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_py_examples', 'merge_install': False, 'path': '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_py_examples', 'symlink_install': False, 'test_result_base': None}
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'manipulator_utils' build argument 'cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'manipulator_utils' build argument 'cmake_target' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'manipulator_utils' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'manipulator_utils' build argument 'cmake_clean_cache' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'manipulator_utils' build argument 'cmake_clean_first' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'manipulator_utils' build argument 'cmake_force_configure' from command line to 'False'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'manipulator_utils' build argument 'ament_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'manipulator_utils' build argument 'catkin_cmake_args' from command line to 'None'
+[0.185s] Level 5:colcon.colcon_core.verb:set package 'manipulator_utils' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.185s] DEBUG:colcon.colcon_core.verb:Building package 'manipulator_utils' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_utils', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils', 'merge_install': False, 'path': '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_utils', 'symlink_install': False, 'test_result_base': None}
+[0.185s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.186s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.186s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_msgs' with build type 'ament_cmake'
+[0.186s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_msgs'
+[0.187s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.188s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.188s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.190s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_description' with build type 'ament_cmake'
+[0.190s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_description'
+[0.191s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.191s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.193s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_moveit' with build type 'ament_cmake'
+[0.193s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_moveit'
+[0.194s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.194s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.199s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs -- -j8 -l8
+[0.201s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_description -- -j8 -l8
+[0.204s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_moveit -- -j8 -l8
+[0.231s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_moveit -- -j8 -l8
+[0.239s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_moveit
+[0.240s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_description -- -j8 -l8
+[0.241s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_description
+[0.249s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(manipulator_moveit)
+[0.250s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_moveit
+[0.257s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit' for CMake module files
+[0.257s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit' for CMake config files
+[0.257s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_moveit', 'cmake_prefix_path')
+[0.257s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/share/manipulator_moveit/hook/cmake_prefix_path.ps1'
+[0.258s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/share/manipulator_moveit/hook/cmake_prefix_path.dsv'
+[0.258s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/share/manipulator_moveit/hook/cmake_prefix_path.sh'
+[0.259s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/bin'
+[0.259s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/lib/pkgconfig/manipulator_moveit.pc'
+[0.259s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/lib/python3.12/site-packages'
+[0.259s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/bin'
+[0.260s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/share/manipulator_moveit/package.ps1'
+[0.260s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/share/manipulator_moveit/package.dsv'
+[0.260s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/share/manipulator_moveit/package.sh'
+[0.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/share/manipulator_moveit/package.bash'
+[0.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/share/manipulator_moveit/package.zsh'
+[0.262s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/share/colcon-core/packages/manipulator_moveit)
+[0.263s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(manipulator_moveit)
+[0.263s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit' for CMake module files
+[0.263s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit' for CMake config files
+[0.264s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_moveit', 'cmake_prefix_path')
+[0.264s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/share/manipulator_moveit/hook/cmake_prefix_path.ps1'
+[0.264s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/share/manipulator_moveit/hook/cmake_prefix_path.dsv'
+[0.265s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/share/manipulator_moveit/hook/cmake_prefix_path.sh'
+[0.265s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/bin'
+[0.265s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/lib/pkgconfig/manipulator_moveit.pc'
+[0.265s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/lib/python3.12/site-packages'
+[0.266s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/bin'
+[0.266s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/share/manipulator_moveit/package.ps1'
+[0.266s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/share/manipulator_moveit/package.dsv'
+[0.268s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/share/manipulator_moveit/package.sh'
+[0.268s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/share/manipulator_moveit/package.bash'
+[0.268s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/share/manipulator_moveit/package.zsh'
+[0.269s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_moveit/share/colcon-core/packages/manipulator_moveit)
+[0.272s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(manipulator_description)
+[0.272s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description' for CMake module files
+[0.273s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description' for CMake config files
+[0.274s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_description
+[0.274s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_description', 'cmake_prefix_path')
+[0.274s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/share/manipulator_description/hook/cmake_prefix_path.ps1'
+[0.275s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/share/manipulator_description/hook/cmake_prefix_path.dsv'
+[0.275s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/share/manipulator_description/hook/cmake_prefix_path.sh'
+[0.276s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/bin'
+[0.276s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/lib/pkgconfig/manipulator_description.pc'
+[0.277s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/lib/python3.12/site-packages'
+[0.277s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/bin'
+[0.277s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/share/manipulator_description/package.ps1'
+[0.278s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/share/manipulator_description/package.dsv'
+[0.278s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/share/manipulator_description/package.sh'
+[0.278s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/share/manipulator_description/package.bash'
+[0.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/share/manipulator_description/package.zsh'
+[0.279s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/share/colcon-core/packages/manipulator_description)
+[0.280s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(manipulator_description)
+[0.280s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description' for CMake module files
+[0.281s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description' for CMake config files
+[0.281s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_description', 'cmake_prefix_path')
+[0.281s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/share/manipulator_description/hook/cmake_prefix_path.ps1'
+[0.282s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/share/manipulator_description/hook/cmake_prefix_path.dsv'
+[0.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/share/manipulator_description/hook/cmake_prefix_path.sh'
+[0.283s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/bin'
+[0.283s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/lib/pkgconfig/manipulator_description.pc'
+[0.283s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/lib/python3.12/site-packages'
+[0.283s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/bin'
+[0.284s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/share/manipulator_description/package.ps1'
+[0.285s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/share/manipulator_description/package.dsv'
+[0.285s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/share/manipulator_description/package.sh'
+[0.286s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/share/manipulator_description/package.bash'
+[0.287s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/share/manipulator_description/package.zsh'
+[0.289s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description/share/colcon-core/packages/manipulator_description)
+[0.290s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_controller' with build type 'ament_cmake'
+[0.290s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_controller'
+[0.290s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.290s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.298s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_controller': AMENT_PREFIX_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description:/home/rajitha-niroshan/Uni/Sem7/Autonomous/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_controller -- -j8 -l8
+[0.327s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_controller' returned '0': AMENT_PREFIX_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description:/home/rajitha-niroshan/Uni/Sem7/Autonomous/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_controller -- -j8 -l8
+[0.328s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_controller': AMENT_PREFIX_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description:/home/rajitha-niroshan/Uni/Sem7/Autonomous/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_controller
+[0.337s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(manipulator_controller)
+[0.337s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller' for CMake module files
+[0.337s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_controller' returned '0': AMENT_PREFIX_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_description:/home/rajitha-niroshan/Uni/Sem7/Autonomous/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_controller
+[0.338s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller' for CMake config files
+[0.338s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_controller', 'cmake_prefix_path')
+[0.338s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/share/manipulator_controller/hook/cmake_prefix_path.ps1'
+[0.339s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/share/manipulator_controller/hook/cmake_prefix_path.dsv'
+[0.339s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/share/manipulator_controller/hook/cmake_prefix_path.sh'
+[0.340s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/bin'
+[0.340s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/lib/pkgconfig/manipulator_controller.pc'
+[0.340s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/lib/python3.12/site-packages'
+[0.340s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/bin'
+[0.340s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/share/manipulator_controller/package.ps1'
+[0.341s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/share/manipulator_controller/package.dsv'
+[0.341s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/share/manipulator_controller/package.sh'
+[0.341s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/share/manipulator_controller/package.bash'
+[0.342s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/share/manipulator_controller/package.zsh'
+[0.342s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/share/colcon-core/packages/manipulator_controller)
+[0.343s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(manipulator_controller)
+[0.343s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller' for CMake module files
+[0.344s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller' for CMake config files
+[0.344s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_controller', 'cmake_prefix_path')
+[0.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/share/manipulator_controller/hook/cmake_prefix_path.ps1'
+[0.344s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/share/manipulator_controller/hook/cmake_prefix_path.dsv'
+[0.345s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/share/manipulator_controller/hook/cmake_prefix_path.sh'
+[0.345s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/bin'
+[0.345s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/lib/pkgconfig/manipulator_controller.pc'
+[0.346s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/lib/python3.12/site-packages'
+[0.346s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/bin'
+[0.346s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/share/manipulator_controller/package.ps1'
+[0.347s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/share/manipulator_controller/package.dsv'
+[0.347s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/share/manipulator_controller/package.sh'
+[0.347s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/share/manipulator_controller/package.bash'
+[0.348s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/share/manipulator_controller/package.zsh'
+[0.348s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_controller/share/colcon-core/packages/manipulator_controller)
+[0.542s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs -- -j8 -l8
+[0.543s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs
+[0.590s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(manipulator_msgs)
+[0.590s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs' for CMake module files
+[0.590s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs
+[0.591s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs' for CMake config files
+[0.591s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_msgs', 'cmake_prefix_path')
+[0.591s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/hook/cmake_prefix_path.ps1'
+[0.591s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/hook/cmake_prefix_path.dsv'
+[0.592s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/hook/cmake_prefix_path.sh'
+[0.592s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib'
+[0.592s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_msgs', 'ld_library_path_lib')
+[0.592s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/hook/ld_library_path_lib.ps1'
+[0.593s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/hook/ld_library_path_lib.dsv'
+[0.593s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/hook/ld_library_path_lib.sh'
+[0.593s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/bin'
+[0.593s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/pkgconfig/manipulator_msgs.pc'
+[0.593s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages'
+[0.593s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_msgs', 'pythonpath')
+[0.594s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/hook/pythonpath.ps1'
+[0.594s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/hook/pythonpath.dsv'
+[0.594s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/hook/pythonpath.sh'
+[0.594s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/bin'
+[0.595s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/package.ps1'
+[0.595s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/package.dsv'
+[0.595s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/package.sh'
+[0.595s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/package.bash'
+[0.596s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/package.zsh'
+[0.596s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/colcon-core/packages/manipulator_msgs)
+[0.596s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(manipulator_msgs)
+[0.596s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs' for CMake module files
+[0.597s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs' for CMake config files
+[0.597s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_msgs', 'cmake_prefix_path')
+[0.597s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/hook/cmake_prefix_path.ps1'
+[0.597s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/hook/cmake_prefix_path.dsv'
+[0.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/hook/cmake_prefix_path.sh'
+[0.598s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib'
+[0.598s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_msgs', 'ld_library_path_lib')
+[0.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/hook/ld_library_path_lib.ps1'
+[0.598s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/hook/ld_library_path_lib.dsv'
+[0.599s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/hook/ld_library_path_lib.sh'
+[0.599s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/bin'
+[0.599s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/pkgconfig/manipulator_msgs.pc'
+[0.599s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages'
+[0.599s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_msgs', 'pythonpath')
+[0.599s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/hook/pythonpath.ps1'
+[0.599s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/hook/pythonpath.dsv'
+[0.600s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/hook/pythonpath.sh'
+[0.600s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/bin'
+[0.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/package.ps1'
+[0.600s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/package.dsv'
+[0.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/package.sh'
+[0.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/package.bash'
+[0.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/package.zsh'
+[0.601s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/colcon-core/packages/manipulator_msgs)
+[0.602s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_py_examples' with build type 'ament_python'
+[0.602s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_py_examples', 'ament_prefix_path')
+[0.602s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_py_examples/share/manipulator_py_examples/hook/ament_prefix_path.ps1'
+[0.602s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_py_examples/share/manipulator_py_examples/hook/ament_prefix_path.dsv'
+[0.603s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_py_examples/share/manipulator_py_examples/hook/ament_prefix_path.sh'
+[0.603s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.603s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.605s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_utils' with build type 'ament_cmake'
+[0.605s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_utils'
+[0.606s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.606s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.781s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_py_examples'
+[0.781s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.781s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.785s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_utils': AMENT_PREFIX_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs:/home/rajitha-niroshan/Uni/Sem7/Autonomous/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_utils -- -j8 -l8
+[1.090s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_utils' returned '0': AMENT_PREFIX_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs:/home/rajitha-niroshan/Uni/Sem7/Autonomous/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_utils -- -j8 -l8
+[1.091s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_utils': AMENT_PREFIX_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs:/home/rajitha-niroshan/Uni/Sem7/Autonomous/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_utils
+[1.129s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(manipulator_utils)
+[1.129s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils' for CMake module files
+[1.130s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_utils' returned '0': AMENT_PREFIX_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs:/home/rajitha-niroshan/Uni/Sem7/Autonomous/ros2_ws/install/cpp_pubsub:/opt/ros/jazzy/opt/gz_launch_vendor:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_utils
+[1.130s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils' for CMake config files
+[1.130s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_utils', 'cmake_prefix_path')
+[1.130s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/share/manipulator_utils/hook/cmake_prefix_path.ps1'
+[1.131s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/share/manipulator_utils/hook/cmake_prefix_path.dsv'
+[1.131s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/share/manipulator_utils/hook/cmake_prefix_path.sh'
+[1.131s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/lib'
+[1.131s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/bin'
+[1.131s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/lib/pkgconfig/manipulator_utils.pc'
+[1.132s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/lib/python3.12/site-packages'
+[1.132s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_utils', 'pythonpath')
+[1.132s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/share/manipulator_utils/hook/pythonpath.ps1'
+[1.132s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/share/manipulator_utils/hook/pythonpath.dsv'
+[1.132s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/share/manipulator_utils/hook/pythonpath.sh'
+[1.133s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/bin'
+[1.133s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/share/manipulator_utils/package.ps1'
+[1.133s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/share/manipulator_utils/package.dsv'
+[1.133s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/share/manipulator_utils/package.sh'
+[1.134s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/share/manipulator_utils/package.bash'
+[1.134s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/share/manipulator_utils/package.zsh'
+[1.134s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/share/colcon-core/packages/manipulator_utils)
+[1.134s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(manipulator_utils)
+[1.134s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils' for CMake module files
+[1.135s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils' for CMake config files
+[1.135s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_utils', 'cmake_prefix_path')
+[1.135s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/share/manipulator_utils/hook/cmake_prefix_path.ps1'
+[1.135s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/share/manipulator_utils/hook/cmake_prefix_path.dsv'
+[1.135s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/share/manipulator_utils/hook/cmake_prefix_path.sh'
+[1.136s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/lib'
+[1.136s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/bin'
+[1.136s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/lib/pkgconfig/manipulator_utils.pc'
+[1.136s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/lib/python3.12/site-packages'
+[1.136s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_utils', 'pythonpath')
+[1.136s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/share/manipulator_utils/hook/pythonpath.ps1'
+[1.137s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/share/manipulator_utils/hook/pythonpath.dsv'
+[1.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/share/manipulator_utils/hook/pythonpath.sh'
+[1.137s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/bin'
+[1.137s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/share/manipulator_utils/package.ps1'
+[1.138s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/share/manipulator_utils/package.dsv'
+[1.138s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/share/manipulator_utils/package.sh'
+[1.138s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/share/manipulator_utils/package.bash'
+[1.139s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/share/manipulator_utils/package.zsh'
+[1.139s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_utils/share/colcon-core/packages/manipulator_utils)
+[1.249s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_py_examples': AMENT_PREFIX_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_py_examples/lib/python3.12/site-packages:/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/manipulator_py_examples build --build-base /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_py_examples/build install --record /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_py_examples/install.log --single-version-externally-managed install_data
+[1.658s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_py_examples' for CMake module files
+[1.658s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_py_examples' returned '0': AMENT_PREFIX_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_py_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_py_examples/lib/python3.12/site-packages:/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/manipulator_py_examples build --build-base /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_py_examples/build install --record /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_py_examples/install.log --single-version-externally-managed install_data
+[1.659s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_py_examples' for CMake config files
+[1.659s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_py_examples/lib'
+[1.659s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_py_examples/bin'
+[1.659s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_py_examples/lib/pkgconfig/manipulator_py_examples.pc'
+[1.659s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_py_examples/lib/python3.12/site-packages'
+[1.660s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_py_examples', 'pythonpath')
+[1.660s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_py_examples/share/manipulator_py_examples/hook/pythonpath.ps1'
+[1.660s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_py_examples/share/manipulator_py_examples/hook/pythonpath.dsv'
+[1.660s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_py_examples/share/manipulator_py_examples/hook/pythonpath.sh'
+[1.661s] Level 1:colcon.colcon_core.environment:checking '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_py_examples/bin'
+[1.661s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(manipulator_py_examples)
+[1.661s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_py_examples/share/manipulator_py_examples/package.ps1'
+[1.661s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_py_examples/share/manipulator_py_examples/package.dsv'
+[1.662s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_py_examples/share/manipulator_py_examples/package.sh'
+[1.662s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_py_examples/share/manipulator_py_examples/package.bash'
+[1.662s] INFO:colcon.colcon_core.shell:Creating package script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_py_examples/share/manipulator_py_examples/package.zsh'
+[1.662s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_py_examples/share/colcon-core/packages/manipulator_py_examples)
+[1.662s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.663s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.663s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.663s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.667s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.667s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.667s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.675s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.675s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/local_setup.ps1'
+[1.676s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/_local_setup_util_ps1.py'
+[1.677s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/setup.ps1'
+[1.677s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/local_setup.sh'
+[1.678s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/_local_setup_util_sh.py'
+[1.678s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/setup.sh'
+[1.679s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/local_setup.bash'
+[1.679s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/setup.bash'
+[1.680s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/local_setup.zsh'
+[1.680s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/setup.zsh'

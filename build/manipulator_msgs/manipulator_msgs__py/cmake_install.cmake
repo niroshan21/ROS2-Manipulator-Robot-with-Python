@@ -1,8 +1,8 @@
-# Install script for directory: /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/manipulator_msgs__py
+# Install script for directory: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs/manipulator_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/install/manipulator_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

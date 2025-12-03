@@ -1,5 +1,5 @@
 CMakeFiles/manipulator_msgs__rosidl_generator_py.dir/rosidl_generator_py/manipulator_msgs/srv/_add_two_ints_s.c.o: \
- /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_generator_py/manipulator_msgs/srv/_add_two_ints_s.c \
+ /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs/rosidl_generator_py/manipulator_msgs/srv/_add_two_ints_s.c \
  /usr/include/stdc-predef.h /usr/include/python3.12/Python.h \
  /usr/include/python3.12/patchlevel.h /usr/include/python3.12/pyconfig.h \
  /usr/include/x86_64-linux-gnu/python3.12/pyconfig.h \
@@ -221,10 +221,10 @@ CMakeFiles/manipulator_msgs__rosidl_generator_py.dir/rosidl_generator_py/manipul
  /usr/lib/python3/dist-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h \
  /usr/lib/python3/dist-packages/numpy/core/include/numpy/__multiarray_api.h \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
- /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_generator_c/manipulator_msgs/srv/detail/add_two_ints__struct.h \
+ /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs/rosidl_generator_c/manipulator_msgs/srv/detail/add_two_ints__struct.h \
  /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.h \
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
- /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_generator_c/manipulator_msgs/srv/detail/add_two_ints__functions.h \
+ /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs/rosidl_generator_c/manipulator_msgs/srv/detail/add_two_ints__functions.h \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_description__struct.h \
@@ -243,5 +243,5 @@ CMakeFiles/manipulator_msgs__rosidl_generator_py.dir/rosidl_generator_py/manipul
  /opt/ros/jazzy/include/rcutils/rcutils/sha256.h \
  /opt/ros/jazzy/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
- /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_generator_c/manipulator_msgs/msg/rosidl_generator_c__visibility_control.h \
+ /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs/rosidl_generator_c/manipulator_msgs/msg/rosidl_generator_c__visibility_control.h \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h

@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "manipulator_msgs/srv/detail/quaternion_to_euler__type_support.h"
-#include "rosidl_typesupport_interface/macros.h"
-#include "manipulator_msgs/srv/detail/quaternion_to_euler__functions.h"
 #include "manipulator_msgs/srv/detail/quaternion_to_euler__struct.h"
+#include "manipulator_msgs/srv/detail/quaternion_to_euler__type_support.h"
+#include "manipulator_msgs/srv/detail/quaternion_to_euler__functions.h"
+#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"

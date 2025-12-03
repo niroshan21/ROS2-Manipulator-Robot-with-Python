@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_controller
+CMAKE_SOURCE_DIR = /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_controller
+CMAKE_BINARY_DIR = /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_controller
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_controller /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_controller /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_controller /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_controller /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_controller/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_controller /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_controller /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_controller /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_controller /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_controller/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uninstall.dir/depend
 

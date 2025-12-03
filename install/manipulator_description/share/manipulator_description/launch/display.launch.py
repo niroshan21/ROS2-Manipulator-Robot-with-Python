@@ -22,7 +22,7 @@ model_arg = DeclareLaunchArgument(
 
 from launch.substitutions import LaunchConfiguration, Command
 #LaunchConfiguration('model') : Retrieves the value of a launch argument (DeclareLaunchArgument).
-#Command : Executes a shell command and retrieves its output. Executes shell commands (e.g., xacro to process URDF/Xacro files).
+#Command : Executes a shell command and retrieves its output. Executes shell commands (e.g., xacro to process URDclearF/Xacro files).
 #Used to get the absolute path of the URDF file.
 """
 urdf_path = Command(['xacro', LaunchConfiguration('model')])

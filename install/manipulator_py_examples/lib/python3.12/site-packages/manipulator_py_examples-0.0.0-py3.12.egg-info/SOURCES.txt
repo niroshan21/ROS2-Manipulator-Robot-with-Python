@@ -9,6 +9,7 @@ setup.py
 ../../build/manipulator_py_examples/manipulator_py_examples.egg-info/top_level.txt
 ../../build/manipulator_py_examples/manipulator_py_examples.egg-info/zip-safe
 manipulator_py_examples/__init__.py
+manipulator_py_examples/simple_action_client.py
 manipulator_py_examples/simple_action_server.py
 manipulator_py_examples/simple_service_client.py
 manipulator_py_examples/simple_service_server.py

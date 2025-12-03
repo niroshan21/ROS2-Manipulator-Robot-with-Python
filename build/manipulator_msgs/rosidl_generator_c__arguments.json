@@ -1,18 +1,18 @@
 {
   "package_name": "manipulator_msgs",
-  "output_dir": "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_generator_c/manipulator_msgs",
+  "output_dir": "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs/rosidl_generator_c/manipulator_msgs",
   "template_dir": "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_adapter/manipulator_msgs:srv/AddTwoInts.idl",
-    "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_adapter/manipulator_msgs:srv/QuaternionToEuler.idl",
-    "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_adapter/manipulator_msgs:srv/EulerToQuaternion.idl",
-    "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_adapter/manipulator_msgs:action/Fibonacci.idl"
+    "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs/rosidl_adapter/manipulator_msgs:srv/AddTwoInts.idl",
+    "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs/rosidl_adapter/manipulator_msgs:srv/QuaternionToEuler.idl",
+    "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs/rosidl_adapter/manipulator_msgs:srv/EulerToQuaternion.idl",
+    "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs/rosidl_adapter/manipulator_msgs:action/Fibonacci.idl"
   ],
   "ros_interface_files": [
-    "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_msgs/srv/AddTwoInts.srv",
-    "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_msgs/srv/QuaternionToEuler.srv",
-    "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_msgs/srv/EulerToQuaternion.srv",
-    "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_msgs/action/Fibonacci.action"
+    "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_msgs/srv/AddTwoInts.srv",
+    "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_msgs/srv/QuaternionToEuler.srv",
+    "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_msgs/srv/EulerToQuaternion.srv",
+    "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_msgs/action/Fibonacci.action"
   ],
   "ros_interface_dependencies": [
     "service_msgs:/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
@@ -44,10 +44,10 @@
     "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.c.em",
     "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
-    "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_adapter/manipulator_msgs/srv/AddTwoInts.idl",
-    "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_adapter/manipulator_msgs/srv/QuaternionToEuler.idl",
-    "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_adapter/manipulator_msgs/srv/EulerToQuaternion.idl",
-    "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_adapter/manipulator_msgs/action/Fibonacci.idl",
+    "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs/rosidl_adapter/manipulator_msgs/srv/AddTwoInts.idl",
+    "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs/rosidl_adapter/manipulator_msgs/srv/QuaternionToEuler.idl",
+    "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs/rosidl_adapter/manipulator_msgs/srv/EulerToQuaternion.idl",
+    "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs/rosidl_adapter/manipulator_msgs/action/Fibonacci.idl",
     "/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
     "/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl",
@@ -58,9 +58,9 @@
     "/opt/ros/jazzy/share/unique_identifier_msgs/msg/UUID.idl"
   ],
   "type_description_tuples": [
-    "srv/AddTwoInts.idl:/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_generator_type_description/manipulator_msgs/srv/AddTwoInts.json",
-    "srv/QuaternionToEuler.idl:/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_generator_type_description/manipulator_msgs/srv/QuaternionToEuler.json",
-    "srv/EulerToQuaternion.idl:/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_generator_type_description/manipulator_msgs/srv/EulerToQuaternion.json",
-    "action/Fibonacci.idl:/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_generator_type_description/manipulator_msgs/action/Fibonacci.json"
+    "srv/AddTwoInts.idl:/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs/rosidl_generator_type_description/manipulator_msgs/srv/AddTwoInts.json",
+    "srv/QuaternionToEuler.idl:/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs/rosidl_generator_type_description/manipulator_msgs/srv/QuaternionToEuler.json",
+    "srv/EulerToQuaternion.idl:/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs/rosidl_generator_type_description/manipulator_msgs/srv/EulerToQuaternion.json",
+    "action/Fibonacci.idl:/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs/rosidl_generator_type_description/manipulator_msgs/action/Fibonacci.json"
   ]
 }

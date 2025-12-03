@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_msgs
+CMAKE_SOURCE_DIR = /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs
+CMAKE_BINARY_DIR = /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs
 
 # Utility rule file for ament_cmake_python_build_manipulator_msgs_egg.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_manipulator_msgs_egg.dir/compiler_de
 include CMakeFiles/ament_cmake_python_build_manipulator_msgs_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_manipulator_msgs_egg:
-	cd /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/ament_cmake_python/manipulator_msgs && /usr/bin/python3 setup.py egg_info
+	cd /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs/ament_cmake_python/manipulator_msgs && /usr/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_manipulator_msgs_egg: CMakeFiles/ament_cmake_python_build_manipulator_msgs_egg
 ament_cmake_python_build_manipulator_msgs_egg: CMakeFiles/ament_cmake_python_build_manipulator_msgs_egg.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_build_manipulator_msgs_egg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_build_manipulator_msgs_egg.dir/clean
 
 CMakeFiles/ament_cmake_python_build_manipulator_msgs_egg.dir/depend:
-	cd /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_msgs /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_msgs /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/CMakeFiles/ament_cmake_python_build_manipulator_msgs_egg.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_msgs /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_msgs /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs/CMakeFiles/ament_cmake_python_build_manipulator_msgs_egg.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ament_cmake_python_build_manipulator_msgs_egg.dir/depend
 

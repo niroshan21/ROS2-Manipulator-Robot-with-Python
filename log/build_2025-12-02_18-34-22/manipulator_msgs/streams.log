@@ -1,0 +1,356 @@
+[0.015s] Invoking command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_msgs -DCMAKE_INSTALL_PREFIX=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs
+[0.129s] -- The C compiler identification is GNU 13.3.0
+[0.219s] -- The CXX compiler identification is GNU 13.3.0
+[0.234s] -- Detecting C compiler ABI info
+[0.307s] -- Detecting C compiler ABI info - done
+[0.318s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.318s] -- Detecting C compile features
+[0.319s] -- Detecting C compile features - done
+[0.326s] -- Detecting CXX compiler ABI info
+[0.416s] -- Detecting CXX compiler ABI info - done
+[0.430s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.430s] -- Detecting CXX compile features
+[0.431s] -- Detecting CXX compile features - done
+[0.436s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.564s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.679s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.727s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.744s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.770s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.799s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.838s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.856s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.434s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[2.014s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.254s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.258s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[2.368s] -- Found PythonExtra: /usr/bin/python3  
+[2.790s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[2.823s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.851s] -- Added test 'lint_cmake' to check CMake code style
+[2.852s] -- Added test 'xmllint' to check XML markup files
+[2.855s] -- Configuring done (2.8s)
+[2.892s] -- Generating done (0.0s)
+[2.902s] -- Build files have been written to: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs
+[2.913s] Invoked command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_msgs -DCMAKE_INSTALL_PREFIX=/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs
+[2.914s] Invoking command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs -- -j8 -l8
+[2.955s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[2.973s] [  1%] Built target ament_cmake_python_copy_manipulator_msgs
+[3.183s] running egg_info
+[3.183s] creating manipulator_msgs.egg-info
+[3.201s] writing manipulator_msgs.egg-info/PKG-INFO
+[3.201s] writing dependency_links to manipulator_msgs.egg-info/dependency_links.txt
+[3.201s] writing top-level names to manipulator_msgs.egg-info/top_level.txt
+[3.201s] writing manifest file 'manipulator_msgs.egg-info/SOURCES.txt'
+[3.260s] reading manifest file 'manipulator_msgs.egg-info/SOURCES.txt'
+[3.260s] writing manifest file 'manipulator_msgs.egg-info/SOURCES.txt'
+[3.261s] [  1%] Built target manipulator_msgs__rosidl_generator_type_description
+[3.271s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.281s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.289s] [  4%] Built target ament_cmake_python_build_manipulator_msgs_egg
+[3.959s] [  4%] Built target manipulator_msgs__cpp
+[4.094s] [ 10%] [32mBuilding C object CMakeFiles/manipulator_msgs__rosidl_generator_c.dir/rosidl_generator_c/manipulator_msgs/srv/detail/quaternion_to_euler__functions.c.o[0m
+[4.094s] [ 10%] [32mBuilding C object CMakeFiles/manipulator_msgs__rosidl_generator_c.dir/rosidl_generator_c/manipulator_msgs/srv/detail/euler_to_quaternion__description.c.o[0m
+[4.095s] [ 10%] [32mBuilding C object CMakeFiles/manipulator_msgs__rosidl_generator_c.dir/rosidl_generator_c/manipulator_msgs/srv/detail/add_two_ints__description.c.o[0m
+[4.095s] [ 10%] [32mBuilding C object CMakeFiles/manipulator_msgs__rosidl_generator_c.dir/rosidl_generator_c/manipulator_msgs/srv/detail/add_two_ints__functions.c.o[0m
+[4.097s] [ 12%] [32mBuilding C object CMakeFiles/manipulator_msgs__rosidl_generator_c.dir/rosidl_generator_c/manipulator_msgs/srv/detail/quaternion_to_euler__description.c.o[0m
+[4.099s] [ 14%] [32mBuilding C object CMakeFiles/manipulator_msgs__rosidl_generator_c.dir/rosidl_generator_c/manipulator_msgs/srv/detail/add_two_ints__type_support.c.o[0m
+[4.099s] [ 15%] [32mBuilding C object CMakeFiles/manipulator_msgs__rosidl_generator_c.dir/rosidl_generator_c/manipulator_msgs/srv/detail/quaternion_to_euler__type_support.c.o[0m
+[4.100s] [ 17%] [32mBuilding C object CMakeFiles/manipulator_msgs__rosidl_generator_c.dir/rosidl_generator_c/manipulator_msgs/srv/detail/euler_to_quaternion__functions.c.o[0m
+[4.160s] [ 18%] [32mBuilding C object CMakeFiles/manipulator_msgs__rosidl_generator_c.dir/rosidl_generator_c/manipulator_msgs/srv/detail/euler_to_quaternion__type_support.c.o[0m
+[4.168s] [ 20%] [32mBuilding C object CMakeFiles/manipulator_msgs__rosidl_generator_c.dir/rosidl_generator_c/manipulator_msgs/action/detail/fibonacci__description.c.o[0m
+[4.173s] [ 21%] [32mBuilding C object CMakeFiles/manipulator_msgs__rosidl_generator_c.dir/rosidl_generator_c/manipulator_msgs/action/detail/fibonacci__functions.c.o[0m
+[4.178s] [ 23%] [32mBuilding C object CMakeFiles/manipulator_msgs__rosidl_generator_c.dir/rosidl_generator_c/manipulator_msgs/action/detail/fibonacci__type_support.c.o[0m
+[4.323s] [ 25%] [32m[1mLinking C shared library libmanipulator_msgs__rosidl_generator_c.so[0m
+[4.361s] [ 25%] Built target manipulator_msgs__rosidl_generator_c
+[4.372s] [ 28%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.373s] [ 29%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.373s] [ 29%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.373s] [ 32%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.373s] [ 32%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.373s] [ 34%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[5.069s] [ 35%] [32mBuilding C object CMakeFiles/manipulator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/manipulator_msgs/srv/detail/add_two_ints__type_support.c.o[0m
+[5.076s] [ 37%] [32mBuilding C object CMakeFiles/manipulator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/manipulator_msgs/srv/detail/quaternion_to_euler__type_support.c.o[0m
+[5.094s] [ 39%] [32mBuilding C object CMakeFiles/manipulator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/manipulator_msgs/srv/detail/euler_to_quaternion__type_support.c.o[0m
+[5.096s] [ 40%] [32mBuilding CXX object CMakeFiles/manipulator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/manipulator_msgs/srv/add_two_ints__type_support.cpp.o[0m
+[5.111s] [ 42%] [32mBuilding CXX object CMakeFiles/manipulator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/manipulator_msgs/srv/add_two_ints__type_support.cpp.o[0m
+[5.147s] [ 43%] [32mBuilding CXX object CMakeFiles/manipulator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/manipulator_msgs/srv/quaternion_to_euler__type_support.cpp.o[0m
+[5.167s] [ 45%] [32mBuilding CXX object CMakeFiles/manipulator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/manipulator_msgs/srv/euler_to_quaternion__type_support.cpp.o[0m
+[5.184s] [ 46%] [32mBuilding C object CMakeFiles/manipulator_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/manipulator_msgs/action/detail/fibonacci__type_support.c.o[0m
+[5.225s] [ 48%] [32mBuilding CXX object CMakeFiles/manipulator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/manipulator_msgs/srv/quaternion_to_euler__type_support.cpp.o[0m
+[5.284s] [ 50%] [32m[1mLinking C shared library libmanipulator_msgs__rosidl_typesupport_introspection_c.so[0m
+[5.319s] [ 51%] [32mBuilding CXX object CMakeFiles/manipulator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/manipulator_msgs/srv/euler_to_quaternion__type_support.cpp.o[0m
+[5.365s] [ 51%] Built target manipulator_msgs__rosidl_typesupport_introspection_c
+[5.372s] [ 53%] [32mBuilding CXX object CMakeFiles/manipulator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/manipulator_msgs/srv/detail/add_two_ints__type_support.cpp.o[0m
+[5.385s] [ 54%] [32mBuilding CXX object CMakeFiles/manipulator_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/manipulator_msgs/action/fibonacci__type_support.cpp.o[0m
+[5.404s] [ 56%] [32mBuilding CXX object CMakeFiles/manipulator_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/manipulator_msgs/action/fibonacci__type_support.cpp.o[0m
+[5.504s] [ 57%] [32m[1mLinking CXX shared library libmanipulator_msgs__rosidl_typesupport_c.so[0m
+[5.593s] [ 57%] Built target manipulator_msgs__rosidl_typesupport_c
+[5.604s] [ 59%] [32mBuilding CXX object CMakeFiles/manipulator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/manipulator_msgs/srv/detail/quaternion_to_euler__type_support.cpp.o[0m
+[5.700s] [ 60%] [32mBuilding CXX object CMakeFiles/manipulator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/manipulator_msgs/srv/detail/add_two_ints__type_support_c.cpp.o[0m
+[5.707s] [ 62%] [32mBuilding CXX object CMakeFiles/manipulator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/manipulator_msgs/srv/detail/quaternion_to_euler__type_support_c.cpp.o[0m
+[5.715s] [ 64%] [32mBuilding CXX object CMakeFiles/manipulator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/manipulator_msgs/srv/detail/euler_to_quaternion__type_support.cpp.o[0m
+[5.723s] [ 65%] [32mBuilding CXX object CMakeFiles/manipulator_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/manipulator_msgs/action/detail/fibonacci__type_support.cpp.o[0m
+[5.777s] [ 67%] [32mBuilding CXX object CMakeFiles/manipulator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/manipulator_msgs/srv/detail/dds_fastrtps/add_two_ints__type_support.cpp.o[0m
+[5.912s] [ 68%] [32mBuilding CXX object CMakeFiles/manipulator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/manipulator_msgs/srv/detail/dds_fastrtps/quaternion_to_euler__type_support.cpp.o[0m
+[6.194s] [ 70%] [32mBuilding CXX object CMakeFiles/manipulator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/manipulator_msgs/srv/detail/euler_to_quaternion__type_support_c.cpp.o[0m
+[6.306s] [ 71%] [32mBuilding CXX object CMakeFiles/manipulator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/manipulator_msgs/srv/detail/dds_fastrtps/euler_to_quaternion__type_support.cpp.o[0m
+[6.414s] [ 73%] [32mBuilding CXX object CMakeFiles/manipulator_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/manipulator_msgs/action/detail/dds_fastrtps/fibonacci__type_support.cpp.o[0m
+[6.560s] [ 75%] [32mBuilding CXX object CMakeFiles/manipulator_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/manipulator_msgs/action/detail/fibonacci__type_support_c.cpp.o[0m
+[6.605s] [ 76%] [32m[1mLinking CXX shared library libmanipulator_msgs__rosidl_typesupport_cpp.so[0m
+[6.748s] [ 76%] Built target manipulator_msgs__rosidl_typesupport_cpp
+[6.928s] [ 78%] [32m[1mLinking CXX shared library libmanipulator_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[7.041s] [ 78%] Built target manipulator_msgs__rosidl_typesupport_introspection_cpp
+[7.207s] [ 79%] [32m[1mLinking CXX shared library libmanipulator_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[7.255s] [ 79%] Built target manipulator_msgs__rosidl_typesupport_fastrtps_c
+[7.480s] [ 81%] [32m[1mLinking CXX shared library libmanipulator_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[7.548s] [ 81%] Built target manipulator_msgs__rosidl_typesupport_fastrtps_cpp
+[7.564s] [ 81%] Built target manipulator_msgs
+[7.580s] [ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[8.586s] [ 82%] Built target manipulator_msgs__py
+[8.604s] [ 84%] [32mBuilding C object CMakeFiles/manipulator_msgs__rosidl_generator_py.dir/rosidl_generator_py/manipulator_msgs/srv/_euler_to_quaternion_s.c.o[0m
+[8.604s] [ 85%] [32mBuilding C object CMakeFiles/manipulator_msgs__rosidl_generator_py.dir/rosidl_generator_py/manipulator_msgs/action/_fibonacci_s.c.o[0m
+[8.604s] [ 87%] [32mBuilding C object CMakeFiles/manipulator_msgs__rosidl_generator_py.dir/rosidl_generator_py/manipulator_msgs/srv/_add_two_ints_s.c.o[0m
+[8.604s] [ 89%] [32mBuilding C object CMakeFiles/manipulator_msgs__rosidl_generator_py.dir/rosidl_generator_py/manipulator_msgs/srv/_quaternion_to_euler_s.c.o[0m
+[8.843s] [ 90%] [32m[1mLinking C shared library libmanipulator_msgs__rosidl_generator_py.so[0m
+[8.884s] [ 90%] Built target manipulator_msgs__rosidl_generator_py
+[8.903s] [ 95%] [32mBuilding C object CMakeFiles/manipulator_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[8.903s] [ 95%] [32mBuilding C object CMakeFiles/manipulator_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[8.903s] [ 95%] [32mBuilding C object CMakeFiles/manipulator_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[9.043s] [ 96%] [32m[1mLinking C shared module rosidl_generator_py/manipulator_msgs/manipulator_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[9.047s] [ 98%] [32m[1mLinking C shared module rosidl_generator_py/manipulator_msgs/manipulator_msgs_s__rosidl_typesupport_c.so[0m
+[9.071s] [100%] [32m[1mLinking C shared module rosidl_generator_py/manipulator_msgs/manipulator_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[9.073s] [100%] Built target manipulator_msgs_s__rosidl_typesupport_introspection_c
+[9.077s] [100%] Built target manipulator_msgs_s__rosidl_typesupport_c
+[9.096s] [100%] Built target manipulator_msgs_s__rosidl_typesupport_fastrtps_c
+[9.107s] Invoked command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs -- -j8 -l8
+[9.108s] Invoking command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs
+[9.116s] -- Install configuration: ""
+[9.116s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/ament_index/resource_index/rosidl_interfaces/manipulator_msgs
+[9.116s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/srv/AddTwoInts.json
+[9.116s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/srv/QuaternionToEuler.json
+[9.116s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/srv/EulerToQuaternion.json
+[9.116s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/action/Fibonacci.json
+[9.116s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs
+[9.116s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action
+[9.116s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action/fibonacci.h
+[9.117s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action/detail
+[9.117s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action/detail/fibonacci__functions.h
+[9.117s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action/detail/fibonacci__description.c
+[9.117s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action/detail/fibonacci__type_support.c
+[9.117s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action/detail/fibonacci__functions.c
+[9.117s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action/detail/fibonacci__struct.h
+[9.117s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action/detail/fibonacci__type_support.h
+[9.117s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/msg
+[9.117s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/msg/rosidl_generator_c__visibility_control.h
+[9.117s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv
+[9.117s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/euler_to_quaternion.h
+[9.118s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/quaternion_to_euler.h
+[9.118s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/add_two_ints.h
+[9.118s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail
+[9.118s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/quaternion_to_euler__type_support.c
+[9.118s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/euler_to_quaternion__type_support.h
+[9.118s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/quaternion_to_euler__type_support.h
+[9.118s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/quaternion_to_euler__description.c
+[9.118s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/add_two_ints__functions.c
+[9.118s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/euler_to_quaternion__type_support.c
+[9.118s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/quaternion_to_euler__struct.h
+[9.118s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/euler_to_quaternion__struct.h
+[9.118s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/add_two_ints__description.c
+[9.119s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/add_two_ints__type_support.c
+[9.119s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/add_two_ints__type_support.h
+[9.119s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/quaternion_to_euler__functions.c
+[9.119s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/add_two_ints__struct.h
+[9.119s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/euler_to_quaternion__functions.c
+[9.119s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/euler_to_quaternion__description.c
+[9.119s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/quaternion_to_euler__functions.h
+[9.119s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/add_two_ints__functions.h
+[9.119s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/euler_to_quaternion__functions.h
+[9.119s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/environment/library_path.sh
+[9.119s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/environment/library_path.dsv
+[9.120s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_generator_c.so
+[9.120s] -- Set non-toolchain portion of runtime path of "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_generator_c.so" to ""
+[9.121s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs
+[9.121s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action
+[9.121s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action/detail
+[9.121s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action/detail/fibonacci__rosidl_typesupport_fastrtps_c.h
+[9.121s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/msg
+[9.121s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[9.121s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv
+[9.121s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail
+[9.121s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/add_two_ints__rosidl_typesupport_fastrtps_c.h
+[9.121s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/quaternion_to_euler__rosidl_typesupport_fastrtps_c.h
+[9.121s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/euler_to_quaternion__rosidl_typesupport_fastrtps_c.h
+[9.121s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_typesupport_fastrtps_c.so
+[9.122s] -- Set non-toolchain portion of runtime path of "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[9.122s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs
+[9.122s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action
+[9.122s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action/fibonacci.hpp
+[9.122s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action/detail
+[9.122s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action/detail/fibonacci__type_support.hpp
+[9.122s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action/detail/fibonacci__struct.hpp
+[9.123s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action/detail/fibonacci__traits.hpp
+[9.123s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action/detail/fibonacci__builder.hpp
+[9.123s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/msg
+[9.123s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[9.123s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv
+[9.123s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/add_two_ints.hpp
+[9.123s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/euler_to_quaternion.hpp
+[9.123s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/quaternion_to_euler.hpp
+[9.123s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail
+[9.124s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/euler_to_quaternion__type_support.hpp
+[9.124s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/euler_to_quaternion__builder.hpp
+[9.124s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/quaternion_to_euler__builder.hpp
+[9.124s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/add_two_ints__builder.hpp
+[9.124s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/add_two_ints__traits.hpp
+[9.124s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/euler_to_quaternion__traits.hpp
+[9.124s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/quaternion_to_euler__type_support.hpp
+[9.124s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/add_two_ints__type_support.hpp
+[9.124s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/add_two_ints__struct.hpp
+[9.124s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/quaternion_to_euler__struct.hpp
+[9.124s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/quaternion_to_euler__traits.hpp
+[9.124s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/euler_to_quaternion__struct.hpp
+[9.124s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs
+[9.124s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action
+[9.124s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action/detail
+[9.125s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action/detail/dds_fastrtps
+[9.125s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action/detail/fibonacci__rosidl_typesupport_fastrtps_cpp.hpp
+[9.125s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/msg
+[9.125s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[9.125s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv
+[9.125s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail
+[9.125s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/quaternion_to_euler__rosidl_typesupport_fastrtps_cpp.hpp
+[9.125s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/dds_fastrtps
+[9.125s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/add_two_ints__rosidl_typesupport_fastrtps_cpp.hpp
+[9.125s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/euler_to_quaternion__rosidl_typesupport_fastrtps_cpp.hpp
+[9.125s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_typesupport_fastrtps_cpp.so
+[9.125s] -- Set non-toolchain portion of runtime path of "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[9.126s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs
+[9.126s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action
+[9.126s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action/detail
+[9.126s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action/detail/fibonacci__rosidl_typesupport_introspection_c.h
+[9.126s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action/detail/fibonacci__type_support.c
+[9.126s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/msg
+[9.126s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[9.126s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv
+[9.126s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail
+[9.126s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/quaternion_to_euler__type_support.c
+[9.126s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/euler_to_quaternion__type_support.c
+[9.126s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/euler_to_quaternion__rosidl_typesupport_introspection_c.h
+[9.126s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/add_two_ints__type_support.c
+[9.126s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/quaternion_to_euler__rosidl_typesupport_introspection_c.h
+[9.126s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/add_two_ints__rosidl_typesupport_introspection_c.h
+[9.127s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_typesupport_introspection_c.so
+[9.127s] -- Set non-toolchain portion of runtime path of "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_typesupport_introspection_c.so" to ""
+[9.127s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_typesupport_c.so
+[9.127s] -- Set non-toolchain portion of runtime path of "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_typesupport_c.so" to ""
+[9.128s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs
+[9.128s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action
+[9.128s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action/detail
+[9.128s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action/detail/fibonacci__type_support.cpp
+[9.128s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/action/detail/fibonacci__rosidl_typesupport_introspection_cpp.hpp
+[9.128s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv
+[9.128s] -- Up-to-date: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail
+[9.128s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/euler_to_quaternion__type_support.cpp
+[9.128s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/quaternion_to_euler__type_support.cpp
+[9.128s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/add_two_ints__rosidl_typesupport_introspection_cpp.hpp
+[9.128s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/euler_to_quaternion__rosidl_typesupport_introspection_cpp.hpp
+[9.128s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/add_two_ints__type_support.cpp
+[9.129s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/include/manipulator_msgs/manipulator_msgs/srv/detail/quaternion_to_euler__rosidl_typesupport_introspection_cpp.hpp
+[9.129s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_typesupport_introspection_cpp.so
+[9.129s] -- Set non-toolchain portion of runtime path of "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[9.130s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_typesupport_cpp.so
+[9.130s] -- Set non-toolchain portion of runtime path of "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_typesupport_cpp.so" to ""
+[9.130s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/environment/pythonpath.sh
+[9.130s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/environment/pythonpath.dsv
+[9.130s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs-0.0.0-py3.12.egg-info
+[9.130s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs-0.0.0-py3.12.egg-info/dependency_links.txt
+[9.131s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs-0.0.0-py3.12.egg-info/SOURCES.txt
+[9.131s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs-0.0.0-py3.12.egg-info/PKG-INFO
+[9.131s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs-0.0.0-py3.12.egg-info/top_level.txt
+[9.131s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs
+[9.131s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/manipulator_msgs_s__rosidl_typesupport_introspection_c.so
+[9.131s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/__init__.py
+[9.131s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/manipulator_msgs_s__rosidl_typesupport_c.so
+[9.131s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[9.131s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[9.131s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/_manipulator_msgs_s.ep.rosidl_typesupport_c.c
+[9.131s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/manipulator_msgs_s__rosidl_typesupport_fastrtps_c.so
+[9.131s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/action
+[9.132s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/action/__init__.py
+[9.132s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/action/_fibonacci_s.c
+[9.132s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/action/_fibonacci.py
+[9.132s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/srv
+[9.132s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/srv/__init__.py
+[9.132s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/srv/_add_two_ints.py
+[9.132s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/srv/_euler_to_quaternion_s.c
+[9.132s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/srv/_add_two_ints_s.c
+[9.132s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/srv/_quaternion_to_euler.py
+[9.132s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/srv/_euler_to_quaternion.py
+[9.132s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/srv/_quaternion_to_euler_s.c
+[9.175s] Listing '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs'...
+[9.175s] Compiling '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/__init__.py'...
+[9.175s] Listing '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/action'...
+[9.175s] Compiling '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/action/__init__.py'...
+[9.176s] Compiling '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/action/_fibonacci.py'...
+[9.176s] Listing '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/srv'...
+[9.176s] Compiling '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/srv/__init__.py'...
+[9.176s] Compiling '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/srv/_add_two_ints.py'...
+[9.176s] Compiling '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/srv/_euler_to_quaternion.py'...
+[9.176s] Compiling '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/srv/_quaternion_to_euler.py'...
+[9.180s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/manipulator_msgs_s__rosidl_typesupport_fastrtps_c.so
+[9.180s] -- Set non-toolchain portion of runtime path of "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/manipulator_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+[9.180s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/manipulator_msgs_s__rosidl_typesupport_introspection_c.so
+[9.180s] -- Set non-toolchain portion of runtime path of "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/manipulator_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+[9.180s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/manipulator_msgs_s__rosidl_typesupport_c.so
+[9.180s] -- Set non-toolchain portion of runtime path of "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/python3.12/site-packages/manipulator_msgs/manipulator_msgs_s__rosidl_typesupport_c.so" to ""
+[9.180s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_generator_py.so
+[9.181s] -- Set non-toolchain portion of runtime path of "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/lib/libmanipulator_msgs__rosidl_generator_py.so" to ""
+[9.181s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/srv/AddTwoInts.idl
+[9.181s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/srv/QuaternionToEuler.idl
+[9.181s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/srv/EulerToQuaternion.idl
+[9.181s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/action/Fibonacci.idl
+[9.181s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/srv/AddTwoInts.srv
+[9.181s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/srv/QuaternionToEuler.srv
+[9.181s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/srv/EulerToQuaternion.srv
+[9.181s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/action/Fibonacci.action
+[9.181s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/ament_index/resource_index/package_run_dependencies/manipulator_msgs
+[9.182s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/ament_index/resource_index/parent_prefix_path/manipulator_msgs
+[9.182s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/environment/ament_prefix_path.sh
+[9.182s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/environment/ament_prefix_path.dsv
+[9.182s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/environment/path.sh
+[9.182s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/environment/path.dsv
+[9.182s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/local_setup.bash
+[9.182s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/local_setup.sh
+[9.182s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/local_setup.zsh
+[9.182s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/local_setup.dsv
+[9.182s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/package.dsv
+[9.182s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/ament_index/resource_index/packages/manipulator_msgs
+[9.182s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_generator_cExport.cmake
+[9.182s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_generator_cExport-noconfig.cmake
+[9.183s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[9.183s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[9.183s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_generator_cppExport.cmake
+[9.183s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[9.183s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[9.183s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgs__rosidl_typesupport_introspection_cExport.cmake
+[9.183s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[9.183s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgs__rosidl_typesupport_cExport.cmake
+[9.183s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[9.183s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[9.183s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[9.183s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgs__rosidl_typesupport_cppExport.cmake
+[9.183s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[9.183s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_generator_pyExport.cmake
+[9.184s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/export_manipulator_msgs__rosidl_generator_pyExport-noconfig.cmake
+[9.184s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/rosidl_cmake-extras.cmake
+[9.184s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.184s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.184s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[9.184s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[9.184s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[9.184s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[9.184s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgsConfig.cmake
+[9.184s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/cmake/manipulator_msgsConfig-version.cmake
+[9.184s] -- Installing: /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/install/manipulator_msgs/share/manipulator_msgs/package.xml
+[9.186s] Invoked command in '/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs

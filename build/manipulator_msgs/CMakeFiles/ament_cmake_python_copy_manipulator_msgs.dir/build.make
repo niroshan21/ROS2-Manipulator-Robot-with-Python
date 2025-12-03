@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_msgs
+CMAKE_SOURCE_DIR = /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs
+CMAKE_BINARY_DIR = /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs
 
 # Utility rule file for ament_cmake_python_copy_manipulator_msgs.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_copy_manipulator_msgs.dir/compiler_depend.
 include CMakeFiles/ament_cmake_python_copy_manipulator_msgs.dir/progress.make
 
 CMakeFiles/ament_cmake_python_copy_manipulator_msgs:
-	/usr/bin/cmake -E copy_directory /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/rosidl_generator_py/manipulator_msgs /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/ament_cmake_python/manipulator_msgs/manipulator_msgs
+	/usr/bin/cmake -E copy_directory /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs/rosidl_generator_py/manipulator_msgs /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs/ament_cmake_python/manipulator_msgs/manipulator_msgs
 
 ament_cmake_python_copy_manipulator_msgs: CMakeFiles/ament_cmake_python_copy_manipulator_msgs
 ament_cmake_python_copy_manipulator_msgs: CMakeFiles/ament_cmake_python_copy_manipulator_msgs.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_copy_manipulator_msgs.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_copy_manipulator_msgs.dir/clean
 
 CMakeFiles/ament_cmake_python_copy_manipulator_msgs.dir/depend:
-	cd /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_msgs /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_msgs /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_msgs/CMakeFiles/ament_cmake_python_copy_manipulator_msgs.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_msgs /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_msgs /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_msgs/CMakeFiles/ament_cmake_python_copy_manipulator_msgs.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ament_cmake_python_copy_manipulator_msgs.dir/depend
 

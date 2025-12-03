@@ -1,9 +1,9 @@
 {
   "package_name": "manipulator_msgs",
   "non_idl_tuples": [
-    "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_msgs:srv/AddTwoInts.srv",
-    "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_msgs:srv/QuaternionToEuler.srv",
-    "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_msgs:srv/EulerToQuaternion.srv",
-    "/home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_msgs:action/Fibonacci.action"
+    "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_msgs:srv/AddTwoInts.srv",
+    "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_msgs:srv/QuaternionToEuler.srv",
+    "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_msgs:srv/EulerToQuaternion.srv",
+    "/home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_msgs:action/Fibonacci.action"
   ]
 }

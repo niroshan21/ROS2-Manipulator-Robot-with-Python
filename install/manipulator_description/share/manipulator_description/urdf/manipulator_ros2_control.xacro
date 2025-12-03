@@ -1,66 +1,69 @@
-<?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="manipulator">
+<ros2_control xmlns:xacro="http://www.ros.org/wiki/xacro" type="system" name="RobotSystem">
 
-    <!-- This <ros2_control> block tells ros2_control (and the simulator bridge) which hardware/system plugin to load 
-     for your robot — and it chooses between an Ignition-compatible system or a Gazebo-compatible system 
-     depending on the is_ignition flag.-->
-    <ros2_control type="system" name="RobotSystem">
+    <xacro:if value="$(arg is_ignition)">     
+        <hardware>
+            <plugin>ign_ros2_control/IgnitionSystem</plugin>
+        </hardware>
+    </xacro:if>
 
-        <xacro:property name="PI" value="3.14159265359" />
+    <xacro:unless value="$(arg is_ignition)">
+        <hardware>
+            <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+        </hardware>
+    </xacro:unless>
 
-        <xacro:if value="$(arg is_ignition)">     
-            <hardware>
-                <plugin>ign_ros2_control/IgnitionSystem</plugin>
-            </hardware>
-        </xacro:if>
+    <!-- joint_1 (razor_connector -> motor_2) : URDF limits [-3.14, 3.14] -->
+    <joint name="joint_1">
+        <command_interface name="position">
+            <param name="min">-3.14159265359</param>
+            <param name="max">3.14159265359</param>
+        </command_interface>
+        <state_interface name="position"/>
+    </joint>
 
-        <xacro:unless value="$(arg is_ignition)">
-            <hardware>
-                <plugin>gz_ros2_control/GazeboSimSystem</plugin>
-            </hardware>
-        </xacro:unless>
+    <!-- joint_2 (motor_2 -> h_arm_L) : URDF limits [-1.57, 1.57] -->
+    <joint name="joint_2">
+        <command_interface name="position">
+            <param name="min">-1.57079632679</param>
+            <param name="max">1.57079632679</param>
+        </command_interface>
+        <state_interface name="position"/>
+    </joint>
 
-        <joint name="joint_1">
-            <command_interface name="position">
-                <param name="min">-${PI / 2}</param>
-                <param name="max">${PI / 2}</param>
-            </command_interface>
-            <state_interface name="position"/>
-        </joint>
+    <!-- joint_3 mimics joint_2 (multiplier=1) in the URDF -->
+    <joint name="joint_3">
+        <param name="mimic">joint_2</param>
+        <param name="multiplier">1</param>
+    </joint>
 
-        <joint name="joint_2">
-            <command_interface name="position">
-                <param name="min">-${PI / 2}</param>
-                <param name="max">${PI / 2}</param>
-            </command_interface>
-            <state_interface name="position"/>
-        </joint>
+    <!-- joint_4 (h_arm_R -> motor_3) : URDF limits [-1.57, 1.57] -->
+    <joint name="joint_4">
+        <command_interface name="position">
+            <param name="min">-1.57079632679</param>
+            <param name="max">1.57079632679</param>
+        </command_interface>
+        <state_interface name="position"/>
+    </joint>
 
-        <joint name="joint_3">
-            <command_interface name="position">
-                <param name="min">-${PI / 2}</param>
-                <param name="max">${PI / 2}</param>
-            </command_interface>
-            <state_interface name="position"/>
-        </joint>
+    <!-- joint_5 mimics joint_4 (multiplier=1) in the URDF -->
+    <joint name="joint_5">
+        <param name="mimic">joint_4</param>
+        <param name="multiplier">1</param>
+    </joint>
 
-        <joint name="joint_4">
-            <command_interface name="position">
-                <param name="min">-${PI / 2}</param>
-                <param name="max">0.0</param>
-            </command_interface>
-            <state_interface name="position"/>
-            <!-- <state_interface name="velocity"/>
-            <param name="position_proportional_gain">1000.0</param>
-            <param name="position_derivative_gain">10.0</param>
-            <param name="position_integral_gain">1.0</param> -->
-        </joint>
+    <!-- joint_6 (gripper base -> gripper_L) : URDF limits [0, 1.2] -->
+    <joint name="joint_6">
+        <command_interface name="position">
+            <param name="min">0.0</param>
+            <param name="max">1.2</param>
+        </command_interface>
+        <state_interface name="position"/>
+    </joint>
 
-        <joint name="joint_5">
-            <param name="mimic">joint_4</param>
-            <param name="multiplier">-1</param>
-        </joint>
+    <!-- joint_7 mimics joint_6 with multiplier=-1 in the URDF -->
+    <joint name="joint_7">
+        <param name="mimic">joint_6</param>
+        <param name="multiplier">-1</param>
+    </joint>
 
-    </ros2_control>
-
-</robot>    
+</ros2_control>

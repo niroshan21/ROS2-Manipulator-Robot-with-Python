@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_controller
+CMAKE_SOURCE_DIR = /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_controller
+CMAKE_BINARY_DIR = /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_controller
 
 # Utility rule file for manipulator_controller_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/manipulator_controller_uninstall.dir/compiler_depend.make
 include CMakeFiles/manipulator_controller_uninstall.dir/progress.make
 
 CMakeFiles/manipulator_controller_uninstall:
-	/usr/bin/cmake -P /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_controller/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_controller/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 manipulator_controller_uninstall: CMakeFiles/manipulator_controller_uninstall
 manipulator_controller_uninstall: CMakeFiles/manipulator_controller_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/manipulator_controller_uninstall.dir/clean:
 .PHONY : CMakeFiles/manipulator_controller_uninstall.dir/clean
 
 CMakeFiles/manipulator_controller_uninstall.dir/depend:
-	cd /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_controller /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_controller /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_controller /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_controller /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_controller/CMakeFiles/manipulator_controller_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_controller /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_controller /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_controller /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_controller /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_controller/CMakeFiles/manipulator_controller_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/manipulator_controller_uninstall.dir/depend
 

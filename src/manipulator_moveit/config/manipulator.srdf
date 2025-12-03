@@ -38,18 +38,32 @@
         <joint name="joint_4" value="0"/>
     </group_state>
 
-    <disable_collision link1="base_link" link2="base_plate" reason="Adjacent"/>
-    <disable_collision link1="base_link" link2="forward_drive_arm" reason="Never"/>
-    <disable_collision link1="base_plate" link2="forward_drive_arm" reason="Never"/>
-    <disable_collision link1="claw_support" link2="forward_drive_arm" reason="Never"/>
-    <disable_collision link1="claw_support" link2="gripper_left" reason="Never"/>
-    <disable_collision link1="claw_support" link2="gripper_right" reason="Never"/>
-    <disable_collision link1="forward_drive_arm" link2="gripper_left" reason="Never"/>
-    <disable_collision link1="forward_drive_arm" link2="gripper_right" reason="Never"/>
-    <disable_collision link1="forward_drive_arm" link2="horizontal_arm" reason="Never"/>
-    <disable_collision link1="gripper_left" link2="horizontal_arm" reason="Never"/>
-    <disable_collision link1="gripper_right" link2="horizontal_arm" reason="Never"/>
-    <disable_collision link1="gripper_left" link2="gripper_right" reason="Never"/>
+    <disable_collisions link1="base_plate" link2="rotating_column" reason="Adjacent"/>
+    <disable_collisions link1="base_plate" link2="forward_drive_arm" reason="Never"/>
+    <disable_collisions link1="base_plate" link2="horizontal_arm" reason="Never"/>
+    <disable_collisions link1="base_plate" link2="claw_support" reason="Never"/>
+    <disable_collisions link1="base_plate" link2="gripper_left" reason="Never"/>
+    <disable_collisions link1="base_plate" link2="gripper_right" reason="Never"/>
+    
+    <disable_collisions link1="rotating_column" link2="forward_drive_arm" reason="Adjacent"/>
+    <disable_collisions link1="rotating_column" link2="horizontal_arm" reason="Never"/>
+    <disable_collisions link1="rotating_column" link2="claw_support" reason="Never"/>
+    <disable_collisions link1="rotating_column" link2="gripper_left" reason="Never"/>
+    <disable_collisions link1="rotating_column" link2="gripper_right" reason="Never"/>
+    
+    <disable_collisions link1="forward_drive_arm" link2="horizontal_arm" reason="Adjacent"/>
+    <disable_collisions link1="forward_drive_arm" link2="claw_support" reason="Never"/>
+    <disable_collisions link1="forward_drive_arm" link2="gripper_left" reason="Never"/>
+    <disable_collisions link1="forward_drive_arm" link2="gripper_right" reason="Never"/>
+    
+    <disable_collisions link1="horizontal_arm" link2="claw_support" reason="Adjacent"/>
+    <disable_collisions link1="horizontal_arm" link2="gripper_left" reason="Never"/>
+    <disable_collisions link1="horizontal_arm" link2="gripper_right" reason="Never"/>
+    
+    <disable_collisions link1="claw_support" link2="gripper_left" reason="Adjacent"/>
+    <disable_collisions link1="claw_support" link2="gripper_right" reason="Adjacent"/>
+    
+    <disable_collisions link1="gripper_left" link2="gripper_right" reason="Never"/>
 
     <!-- Each link of your robot (like base, arm, gripper, etc.) has a mesh or shape that represents its physical volume.
          During motion planning, MoveIt continuously checks: “Do any two shapes occupy the same 3D space at the same time?”

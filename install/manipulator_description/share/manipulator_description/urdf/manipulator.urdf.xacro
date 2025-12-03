@@ -15,220 +15,521 @@
     <xacro:property name="effort" value="30.0" />
     <xacro:property name="velocity" value="10.0" />
 
-    <!-- Useful Macros -->
-    <xacro:macro name="default_inertial" params="mass">
-        <inertial>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
-            <mass value="${mass}" />
-            <inertia ixx="1.0" ixy="0.0" ixz="0.0"
-                     iyy="1.0" iyz="0.0"
-                     izz="1.0" />
-        </inertial>
-    </xacro:macro>
-
-    <!-- Shared materials (RGBA, values 0..1) -->
-    <material name="mat_base">
-        <color rgba="0.0 0.2 0.8 1.0"/>   <!-- blue -->
-    </material>
-    <material name="mat_plate">
-        <color rgba="0.8 0.1 0.1 1.0"/>   <!-- red -->
-    </material>
-    <material name="mat_arm1">
-        <color rgba="0.1 0.8 0.2 1.0"/>   <!-- green -->
-    </material>
-    <material name="mat_arm2">
-        <color rgba="0.95 0.6 0.15 1.0"/> <!-- orange -->
-    </material>
-    <material name="mat_claw">
-        <color rgba="0.6 0.2 0.8 1.0"/>   <!-- purple -->
-    </material>
-    <material name="mat_gripper">
-        <color rgba="0.95 0.92 0.15 1.0"/><!-- yellow -->
-    </material>
-    <material name="mat_mesh_grey">
-        <color rgba="0.5 0.5 0.5 1.0"/>   <!-- fallback grey -->
-    </material>
-
     <!-- Links -->
     <link name="world"/>
 
-    <link name="base_link">
-        <xacro:default_inertial mass="1.0"/>
-        <visual>
-            <origin rpy="0 0 0" xyz="-0.5 -0.5 0"/>    
-            <geometry>
-                <mesh filename="package://manipulator_description/meshes/basement.STL" scale="0.01 0.01 0.01"/>
-            </geometry>
-            <material name="mat_base"/>
-        </visual>
-        <collision>
-            <origin rpy="0 0 0" xyz="-0.5 -0.5 0"/>
-            <geometry>
-                <mesh filename="package://manipulator_description/meshes/basement.STL" scale="0.01 0.01 0.01"/>
-            </geometry>
-        </collision>
-    </link>
-
-    <joint name="virtual_joint" type="fixed">
-        <parent link="world"/>
-        <child link="base_link"/>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-    </joint> 
-
     <link name="base_plate">
-        <xacro:default_inertial mass="0.1"/>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.050"/>  <!-- Example: 50g plate -->
+            <inertia 
+                ixx="0.00001129" 
+                ixy="0.0" 
+                ixz="0.0"
+                iyy="0.00001129" 
+                iyz="0.0"
+                izz="0.00002250"/>
+        </inertial>
+
         <visual>
-            <origin rpy="0 0 0" xyz="-0.39 -0.39 -0.56"/>    <!-- Every link has a link frame (its origin, usually at the center or a meaningful point). Here that point is at parent's origin -->
+            <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://manipulator_description/meshes/base_plate.STL" scale="0.01 0.01 0.01"/>
+                <cylinder radius="0.03" length="0.005"/>
             </geometry>
-            <material name="mat_plate"/>
         </visual>
+
         <collision>
-            <origin rpy="0 0 0" xyz="-0.39 -0.39 -0.56"/>   <!-- pose of the child link frame relative to the parent link frame. -->
+            <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://manipulator_description/meshes/base_plate.STL" scale="0.01 0.01 0.01"/>
+                <cylinder radius="0.03" length="0.005"/>
             </geometry>
         </collision>
     </link>
 
-     <joint name ="joint_1" type="revolute">
-        <parent link="base_link"/>
-        <child link = "base_plate"/>
-        <origin xyz="0 0 0.307"/>
-        <axis xyz="0 0 1"/>
-        <limit lower="-${PI / 2}" upper="${PI / 2}" 
-               effort="${effort}" velocity="${velocity}"/>
+
+    <joint name="base_plate_fixed" type="fixed">
+        <parent link="world"/>
+        <child link="base_plate"/>
+        <origin xyz="0 0 0.5" rpy="0 0 0"/>  <!-- Raised whole model +0.5 m along Z -->
     </joint>
 
-    <link name="forward_drive_arm">
-        <xacro:default_inertial mass="0.1"/>
+
+    <link name="motor_1">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.075"/>
+
+            <inertia 
+                ixx="1.68e-5" ixy="0" ixz="0"
+                iyy="2.48e-5" iyz="0"
+                izz="1.65e-5"/>
+        </inertial>
+
         <visual>
-            <origin rpy=" 0 -${PI / 2} ${PI / 2}" xyz="0.19 0.06 -0.08"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://manipulator_description/meshes/forward_drive_arm.STL" scale="0.01 0.01 0.01"/>
+                <!-- Motor approximated as 45×22×44 mm box -->
+                <box size="0.045 0.022 0.044"/>
             </geometry>
-            <material name="mat_arm1"/>
         </visual>
+
         <collision>
-            <origin rpy=" 0 -${PI / 2} ${PI / 2}" xyz="0.19 0.06 -0.08"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://manipulator_description/meshes/forward_drive_arm.STL" scale="0.01 0.01 0.01"/>
+                <box size="0.045 0.022 0.044"/>
             </geometry>
         </collision>
     </link>
 
-    <joint name ="joint_2" type="revolute">
+    <joint name="joint_motor_1" type="fixed">
         <parent link="base_plate"/>
-        <child link = "forward_drive_arm"/>
-        <origin xyz="-0.02 0 0.35"/>
-        <axis xyz="1 0 0"/>
-        <limit lower="-${PI / 2}" upper="${PI / 2}"
-                effort="${effort}" velocity="${velocity}"/>
+        <child link="motor_1"/>
+
+        <!-- Motor attached below the plate -->
+        <origin xyz="0 0 -0.0245" rpy="0 0 0"/>
     </joint>
 
-    <link name="horizontal_arm">
-        <xacro:default_inertial mass="0.1"/>
+
+    <link name="razor_connector">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.01"/>
+
+            <inertia 
+                ixx="3.05e-7" ixy="0" ixz="0"
+                iyy="3.05e-7" iyz="0"
+                izz="1.51e-7"/>
+        </inertial>
+
         <visual>
-            <origin rpy="${PI / 2} 0 ${PI / 2}" xyz="-0.03 -0.4 -0.06"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://manipulator_description/meshes/horizontal_arm.STL" scale="0.01 0.01 0.01"/>
+                <cylinder radius="0.0055" length="0.008"/>
             </geometry>
-            <material name="mat_arm2"/>
         </visual>
+
         <collision>
-            <origin rpy="${PI / 2} 0 ${PI / 2}" xyz="-0.03 -0.4 -0.06"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://manipulator_description/meshes/horizontal_arm.STL" scale="0.01 0.01 0.01"/>
+                <cylinder radius="0.0055" length="0.008"/>
             </geometry>
         </collision>
     </link>
 
-    <joint name ="joint_3" type="revolute">
-        <parent link="forward_drive_arm"/>
-        <child link = "horizontal_arm"/>
-        <origin xyz="0 0 0.8"/>
-        <axis xyz="1 0 0"/>
-        <limit lower="-${PI / 2}" upper="${PI / 2}"
-               effort="${effort}" velocity="${velocity}"/>
+    <joint name="joint_motor1_to_connector" type="fixed">
+        <parent link="motor_1"/>
+        <child link="razor_connector"/>
+
+        <!-- Connector sits ABOVE motor_1 -->
+        <origin xyz="0.0095 0 -0.026" rpy="0 0 0"/>
     </joint>
 
-    <link name="claw_support">
-        <xacro:default_inertial mass="0.05"/>
+
+    <link name="motor_2">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.082"/>
+
+            <inertia
+                ixx="2.09e-5" ixy="0" ixz="0"
+                iyy="3.34e-5" iyz="0"
+                izz="2.20e-5"/>
+        </inertial>
+
         <visual>
-            <origin rpy="0 0 ${PI / 2}" xyz="0 -0.05 -0.15"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://manipulator_description/meshes/claw_support.STL" scale="0.01 0.01 0.01"/>
+                <!-- Motor approximated as 53×24×50 mm box -->
+                <box size="0.053 0.050 0.024"/>
             </geometry>
-            <material name="mat_claw"/>
         </visual>
+
         <collision>
-            <origin rpy="0 0 ${PI / 2}" xyz="0 -0.05 -0.15"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://manipulator_description/meshes/claw_support.STL" scale="0.01 0.01 0.01"/>
+                <box size="0.053 0.050 0.024"/>
             </geometry>
         </collision>
     </link>
 
-    <joint name ="horizontal_arm_to_claw_support" type="fixed">
-        <parent link="horizontal_arm"/>
-        <child link = "claw_support"/>
-        <origin xyz="0 0.82 0"/>
-    </joint>
+    <joint name="joint_1" type="revolute">
+        <parent link="razor_connector"/>
+        <child link="motor_2"/>
 
-    <link name="gripper_right">
-        <xacro:default_inertial mass="0.01"/>
-        <visual>
-            <origin rpy="0 0 -${PI / 2}" xyz="-0.1 0.50 -0.1"/>
-            <geometry>
-                <mesh filename="package://manipulator_description/meshes/right_finger.STL" scale="0.01 0.01 0.01"/>
-            </geometry>
-            <material name="mat_gripper"/>
-        </visual>
-        <collision>
-            <origin rpy="0 0 -${PI / 2}" xyz="-0.1 0.50 -0.1"/>
-            <geometry>
-                <mesh filename="package://manipulator_description/meshes/right_finger.STL" scale="0.01 0.01 0.01"/>
-            </geometry>
-        </collision>
-    </link>
+        <!-- Motor 2 sits ABOVE the connector -->
+        <origin xyz="0 -0.010 -0.016" rpy="0 0 0"/>
 
-    <joint name ="joint_4" type="revolute">
-        <parent link="claw_support"/>
-        <child link = "gripper_right"/>
-        <origin xyz="-0.04 0.13 -0.1"/>
+        <!-- Rotation around Z-axis -->
         <axis xyz="0 0 1"/>
-        <limit lower="-${PI / 2}" upper="0.0" 
-               effort="${effort}" velocity="${velocity}"/>
-        <dynamics damping="0.001" friction="0.001"/>
-    </joint>
 
-    <link name="gripper_left">
-        <xacro:default_inertial mass="0.01"/>
+        <!-- Reasonable limits (modify as needed) -->
+        <limit lower="-3.14" upper="3.14" effort="2.0" velocity="5.0"/>
+    </joint>
+   
+
+    <link name="h_arm_L">
+        <inertial>
+            <origin xyz="0 0 -0.052" rpy="0 0 0"/>
+            <mass value="0.018"/>
+
+            <inertia
+        ixx="2.54e-5" ixy="0" ixz="0"
+        iyy="2.46e-5" iyz="0"
+        izz="9.435e-07"/>
+        </inertial>
+
         <visual>
-            <origin rpy="0 0 -${PI / 2}" xyz="-0.04 0.50 -0.1"/>
+            <origin xyz="0 0 -0.052" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://manipulator_description/meshes/left_finger.STL" scale="0.01 0.01 0.01"/>
+                <!-- 2 mm × 25 mm cross-section, height 128 mm -->
+                <box size="0.002 0.025 0.128"/>
             </geometry>
-            <material name="mat_gripper"/>
         </visual>
+
         <collision>
-            <origin rpy="0 0 -${PI / 2}" xyz="-0.04 0.50 -0.1"/>
+            <origin xyz="0 0 -0.052" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://manipulator_description/meshes/left_finger.STL" scale="0.01 0.01 0.01"/>
+                <box size="0.002 0.025 0.128"/>
             </geometry>
         </collision>
     </link>
 
-    <joint name ="joint_5" type="revolute">
-        <parent link="claw_support"/>
-        <child link = "gripper_left"/>
-        <origin xyz="-0.22 0.13 -0.1"/>
-        <axis xyz="0 0 1"/>
-        <limit lower="0.0" upper="${PI / 2}" 
-               effort="${effort}" velocity="${velocity}"/>
-        <dynamics damping="0.001" friction="0.001"/>
-        <mimic joint="joint_4" multiplier="-1"/>   <!-- This joint mimics joint_4 means it will move in the opposite direction to joint_4 -->
+    <joint name="joint_2" type="revolute">
+        <parent link="motor_2"/>
+        <child link="h_arm_L"/>
+
+        <!-- Arm sits Below motor_2 -->
+        <origin xyz="-0.0275 0.0125 0" rpy="0 0 0"/>
+
+        <!-- Rotation around X-axis -->
+        <axis xyz="1 0 0"/>
+
+        <limit lower="-1.57" upper="1.57" effort="2.0" velocity="3.0"/>
+    </joint>
+
+    <link name="h_arm_R">
+        <inertial>
+            <origin xyz="0 0 -0.052" rpy="0 0 0"/>
+            <mass value="0.018"/>
+
+            <inertia
+        ixx="2.54e-5" ixy="0" ixz="0"
+        iyy="2.46e-5" iyz="0"
+        izz="9.435e-07"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 -0.052" rpy="0 0 0"/>
+            <geometry>
+                <!-- 2 mm × 25 mm cross-section, height 128 mm -->
+                <box size="0.002 0.025 0.128"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 -0.052" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.002 0.025 0.128"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="joint_3" type="revolute">
+        <parent link="motor_2"/>
+        <child link="h_arm_R"/>
+
+        <!-- Arm sits Below motor_2 -->
+        <origin xyz="0.0275 0.0125 0" rpy="0 0 0"/>
+
+        <!-- Rotation around X-axis -->
+        <axis xyz="1 0 0"/>
+
+        <limit lower="-1.57" upper="1.57" effort="2.0" velocity="3.0"/>
+        <mimic joint="joint_2" multiplier="1"/> 
+    </joint>
+
+
+    <link name="h_arm_middle">
+        <inertial>
+            <origin xyz="0 0 -0.052" rpy="0 0 0"/>
+            <mass value="0.018"/>
+            <inertia
+                ixx="1.00e-6" ixy="0" ixz="0"
+                iyy="1.50e-6" iyz="0"
+                izz="1.31e-6"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 -0.052" rpy="0 0 0"/>
+            <geometry>
+                <!-- 53 × 25 × 4 mm block -->
+                <box size="0.053 0.025 0.004"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 -0.052" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.053 0.025 0.004"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="joint_middle_to_L" type="fixed">
+        <parent link="h_arm_L"/>
+        <child link="h_arm_middle"/>
+
+        <!-- Middle piece connects to end of left arm -->
+        <origin xyz="0.0265 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="joint_middle_to_R" type="fixed">
+        <parent link="h_arm_R"/>
+        <child link="h_arm_middle"/>
+
+        <!-- Middle piece connects to end of right arm -->
+        <origin xyz="-0.0265 0 0" rpy="0 0 0"/>
+    </joint>
+
+
+    <link name="motor_3">
+        <inertial>
+            <origin xyz="0 0 -0.015" rpy="0 0 0"/>
+            <mass value="0.085"/>
+
+            <inertia 
+                ixx="3.13e-5" ixy="0" ixz="0"
+                iyy="4.37e-5" iyz="0"
+                izz="1.39e-5"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 -0.015" rpy="0 0 0"/>
+            <geometry>
+                <!-- 53 × 25 × 60 mm -->
+                <box size="0.053 0.025 0.060"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 -0.015" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.053 0.025 0.060"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="joint_4" type="revolute">
+        <parent link="h_arm_R"/>
+        <child link="motor_3"/>
+        
+        <origin xyz="-0.0275 0 -0.106" rpy="0 0 0"/>
+        <!-- Rotation around X-axis -->
+        <axis xyz="1 0 0"/>
+        <limit lower="-1.57" upper="1.57" effort="2.0" velocity="3.0"/>
+    </joint>
+
+    <joint name="joint_5" type="revolute">
+        <parent link="h_arm_L"/>
+        <child link="motor_3"/>
+        
+        <origin xyz="0.0275 0 -0.106" rpy="0 0 0"/>
+        <!-- Rotation around X-axis -->
+        <axis xyz="1 0 0"/>
+        <limit lower="-1.57" upper="1.57" effort="2.0" velocity="3.0"/>
+        <mimic joint="joint_4" multiplier="1"/> 
+    </joint>
+
+
+    <link name="rod">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.02"/>
+
+            <inertia
+                ixx="5.28e-6" ixy="0" ixz="0"
+                iyy="5.28e-6" iyz="0"
+                izz="3.60e-7"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <!-- r = 6 mm, h = 55 mm -->
+                <cylinder radius="0.006" length="0.055"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <cylinder radius="0.006" length="0.055"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- Rod fixedly connected to Motor 3 -->
+    <joint name="joint_motor3_to_rod" type="fixed">
+        <parent link="motor_3"/>
+        <child  link="rod"/>
+
+        <!-- Rod center 0.0575 m above motor_3 center:
+            0.5*0.060 (motor height) + 0.5*0.055 (rod length) -->
+        <origin xyz="-0.0015 0 -0.0725" rpy="0 0 0"/>
+    </joint>
+
+
+    <link name="gripper_base">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.020"/>
+
+            <inertia
+                ixx="4.19e-6" ixy="0" ixz="0"
+                iyy="6.76e-6" iyz="0"
+                izz="1.00e-6"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <!-- 40 × 3 × 50 mm plate -->
+                <box size="0.040 0.003 0.050"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.040 0.003 0.050"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="joint_rod_to_gripper_base" type="fixed">
+        <parent link="rod"/>
+        <child  link="gripper_base"/>
+
+        <!-- Gripper base mounted at the top end of the rod -->
+        <origin xyz="0 0 -0.0525" rpy="0 0 0"/>
+    </joint>
+
+
+    <link name="motor_4">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.055"/>
+
+            <inertia
+                ixx="1.25e-5" ixy="0" ixz="0"
+                iyy="1.75e-5" iyz="0"
+                izz="1.82e-5"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <!-- 44 × 20 × 45 mm block -->
+                <box size="0.044 0.045 0.020"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.044 0.045 0.020"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="joint_gripperbase_to_motor4" type="fixed">
+        <parent link="gripper_base"/>
+        <child  link="motor_4"/>
+
+        <!-- Motor 4 mounted on top of the gripper base -->
+        <origin xyz="0.027 -0.024 -0.002" rpy="0 0 0"/>
+    </joint>
+
+
+    <link name="gripper_L">
+        <inertial>
+            <origin xyz="0 0 -0.022" rpy="0 0 0"/>
+            <mass value="0.020"/>
+
+            <inertia
+                ixx="6.03e-6" ixy="0" ixz="0"
+                iyy="6.10e-6" iyz="0"
+                izz="1.00e-7"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 -0.022" rpy="0 0 0"/>
+            <geometry>
+                <!-- w=10mm, h=3mm, d=60mm -->
+                <box size="0.010 0.003 0.060"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 -0.022" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.010 0.003 0.060"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="joint_6" type="revolute">
+        <parent link="gripper_base"/>
+        <child  link="gripper_L"/>
+
+        <!-- Gripper hinge location (adjust if needed) -->
+        <origin xyz="-0.010 0.003 0" rpy="0 0 0"/>
+
+        <!-- Rotation about Y-axis -->
+        <axis xyz="0 1 0"/>
+
+        <limit lower="0" upper="1.2" effort="1.0" velocity="2.0"/>
+    </joint>
+
+    <link name="gripper_R">
+        <inertial>
+            <origin xyz="0 0 -0.022" rpy="0 0 0"/>
+            <mass value="0.020"/>
+
+            <inertia
+                ixx="6.03e-6" ixy="0" ixz="0"
+                iyy="6.10e-6" iyz="0"
+                izz="1.00e-7"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 -0.022" rpy="0 0 0"/>
+            <geometry>
+                <!-- w=10mm, h=3mm, d=60mm -->
+                <box size="0.010 0.003 0.060"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 -0.022" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.010 0.003 0.060"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="joint_7" type="revolute">
+        <parent link="gripper_base"/>
+        <child  link="gripper_R"/>
+
+        <!-- Gripper hinge location (adjust if needed) -->
+        <origin xyz="0.010 0.003 0" rpy="0 0 0"/>
+
+        <!-- Rotation about Y-axis -->
+        <axis xyz="0 1 0"/>
+
+        <limit lower="-1.2" upper="0" effort="1.0" velocity="2.0"/>
+        <mimic joint="joint_6" multiplier="-1"/>
     </joint>
 
     

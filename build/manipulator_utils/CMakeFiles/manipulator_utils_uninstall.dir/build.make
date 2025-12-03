@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_utils
+CMAKE_SOURCE_DIR = /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_utils
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_utils
+CMAKE_BINARY_DIR = /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_utils
 
 # Utility rule file for manipulator_utils_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/manipulator_utils_uninstall.dir/compiler_depend.make
 include CMakeFiles/manipulator_utils_uninstall.dir/progress.make
 
 CMakeFiles/manipulator_utils_uninstall:
-	/usr/bin/cmake -P /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_utils/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_utils/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 manipulator_utils_uninstall: CMakeFiles/manipulator_utils_uninstall
 manipulator_utils_uninstall: CMakeFiles/manipulator_utils_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/manipulator_utils_uninstall.dir/clean:
 .PHONY : CMakeFiles/manipulator_utils_uninstall.dir/clean
 
 CMakeFiles/manipulator_utils_uninstall.dir/depend:
-	cd /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_utils && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_utils /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/src/manipulator_utils /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_utils /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_utils /home/rajitha-niroshan/FYP/Repos/Others/ROS2-Manipulator-Robot-with-Python/build/manipulator_utils/CMakeFiles/manipulator_utils_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_utils && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_utils /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/src/manipulator_utils /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_utils /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_utils /home/rajitha-niroshan/FYP/Repos/Others/our_arm_v2/build/manipulator_utils/CMakeFiles/manipulator_utils_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/manipulator_utils_uninstall.dir/depend
 
